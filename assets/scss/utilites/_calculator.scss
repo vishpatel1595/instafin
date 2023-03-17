@@ -1,0 +1,35 @@
+.slider-tooltip {
+  width: 100%;
+  position: relative;
+
+  .tooltiptext {
+    position: absolute;
+    bottom: calc(100% + 0.5rem);
+    left: calc(50% - 1.07rem);
+    min-width: 3ch;
+    border-radius: 0.25rem;
+    pointer-events: none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    background-color: $primary-color;
+    z-index: 1;
+    opacity: 1;
+    transition: left 300ms ease-out, opacity 300ms 300ms ease-out, background-color 300ms ease-out;
+  }
+
+  .tooltiptext::before {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.125rem;
+    background-color: $primary-color ;
+    transform: translate(-50%, -80%) rotate(45deg);
+    z-index: 0;
+  }
+}

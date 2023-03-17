@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Instafin</title>
+</head>
+<body>
+    <div class="dashboard-wrapper h-100 w-100">
+        <header>
+            <div class="container">
+                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <figure class="m-0 p-0">
+                                <img src="assets/web-asset/images/logo.svg" alt="logo"/></figure>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>Mutual Funds</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>Buy Online</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>My Investment</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span
+                                        class="bi bi-search"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="bi bi-bell"></span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="bi bi-cart-plus"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="bi bi-person-circle"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>       
+        <!-- <div class="container dashboard-content-wrapper d-flex content-wrapper mt-3 flex-wrap overflow-hidden h-100">
+            <aside class="sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Investment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mutual Funds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Buy Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Financial Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accounts & Finance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CRM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Utility</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="h-100 main-dashboard">
+                <div class="dashboard-header mb-3">
+                    <h5 class="dashboard-header-title">Most popular Funds</h5>
+                </div>
+                <div class="dashboard-card-wrapper row p-0 m-0">
+                    <div class="col-md-3 col-sm-12 p-2">
+                        <div class="card card-style-2">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure>e
+                                    <img src="" alt="">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6>ICICI Prudential
+                                    Technology Direct
+                                    Plan Growth</h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <p><span>35.5%</span> <span>(3y)</span> <span class="bi bi-arrow-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 p-2">
+                        <div class="card card-style-2">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6>ICICI Prudential
+                                    Technology Direct
+                                    Plan Growth</h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <p><span>35.5%</span> <span>(3y)</span> <span class="bi bi-arrow-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 p-2">
+                        <div class="card card-style-2">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6>ICICI Prudential
+                                    Technology Direct
+                                    Plan Growth</h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <p><span>35.5%</span> <span>(3y)</span> <span class="bi bi-arrow-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 p-2">
+                        <div class="card card-style-2">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure>
+                                    <img src="" alt="">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6>ICICI Prudential
+                                    Technology Direct
+                                    Plan Growth</h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent">
+                                <p><span>35.5%</span> <span>(3y)</span> <span class="bi bi-arrow-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-header bg-red-gradient mb-3 mt-3">
+                    <h5 class="dashboard-header-title ">Collections</h5>
+                </div>
+                <div class="dahsboard-card-wrapper row p-0 m-0 mt-3">
+                    <div class="col-md-2 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card card-style-3">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure class="card-img-wrapper">
+                                    <img class="card-img" src="assets/web-asset/images/high-return.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">High Return</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 p-2 d-flex justify-content-center align-items-center">
+                        <div class="card card-style-3">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure class="card-img-wrapper">
+                                    <img class="card-img" src="assets/web-asset/images/sip.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">High Return</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 p-2 d-flex justify-content-center align-items-center">
+                        <div class="card card-style-3">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure class="card-img-wrapper">
+                                    <img class="card-img" src="assets/web-asset/images/tax-saving.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">High Return</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 p-2 d-flex justify-content-center align-items-center">
+                        <div class="card card-style-3">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure class="card-img-wrapper">
+                                    <img class="card-img" src="assets/web-asset/images/large-cap.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">High Return</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 p-2 d-flex justify-content-center align-items-center">
+                        <div class="card card-style-3">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure class="card-img-wrapper">
+                                    <img class="card-img" src="assets/web-asset/images/med-cap.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">High Return</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12 p-2 d-flex justify-content-center align-items-center">
+                        <div class="card card-style-3">
+                            <div class="card-header border-0 bg-transparent">
+                                <figure class="card-img-wrapper">
+                                    <img class="card-img" src="assets/web-asset/images/small-cap.png" alt="img">
+                                </figure>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">High Return</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+        </div> -->
+        <div class="w-100 h-100">
+            <div class="container">
+                <div class="row">
+                <div class="">
+                    <div class="top-bar">
+                        <div class="admin-title-wrapper">
+                            <p>Hello</p>
+                            <h3>Admin</h3><button>download</button>
+                        </div>
+                        <div class="aum-wrapper">
+                            <p>Current</p>
+                            <h3 class="amu-amount">AUM 9.99<span class="amu-amount-in">cr.</span></h3>
+                            <div class="d-flex flex-column w-100 justify-content-center align-items-center"><span
+                                    class="amu-rate">+ <span>0</span>% <span>MoM</span></span>
+                                <div class="btn-wrapper w-100 d-flex justify-content-end align-items-center"><button
+                                        class="amu-btn">View Report</button></div>
+                            </div>
+                        </div>
+                        <div class="sip-wrapper">
+                            <p>Current</p>
+                            <h3>SIP 9.99<span>cr.</span></h3>
+                            <div class="d-flex flex-column w-100 justify-content-center align-items-center"><span
+                                    class="sip-rate">+ <span>0</span>% <span>MoM</span></span>
+                                <div class="btn-wrapper w-100 d-flex justify-content-end align-items-center"><button
+                                        class="report-btn">View Report</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-divider"></div>
+                    <div class="graph-wrapper row">
+                        <div class="col-lg-6 col-sm-12 p-2 justify-content-center align-items-center">
+                            <div class="barchart-data chart-bg border h-100 ">
+                                <div class="title-wrapper">
+                                    <div class="graph-title-wrapper">
+                                        <p class="graph-title">Mutual Fund</p>
+                                    </div>
+                                </div>
+                                <div class="p-md-3 mt-3"><button>download</button>
+                                    <div class="recharts-responsive-container" width="462" height="250"
+                                        style="width: 100%; height: 250px;">
+                                        <div class="recharts-wrapper"
+                                            style="position: relative; cursor: default; width: 462px; height: 250px;">
+                                            <svg class="recharts-surface" width="462" height="250" viewBox="0 0 462 250"
+                                                version="1.1">
+                                                <defs>
+                                                    <clipPath id="recharts1-clip">
+                                                        <rect x="80" y="5" height="185" width="352"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis">
+                                                    <line orientation="bottom" width="352" height="30" type="category"
+                                                        x="80" y="190" class="recharts-cartesian-axis-line"
+                                                        stroke="#666" fill="none" x1="80" y1="190" x2="432" y2="190">
+                                                    </line>
+                                                    <g class="recharts-cartesian-axis-ticks">
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="bottom" width="352" height="30"
+                                                                type="category" x="80" y="190"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="90" y1="196" x2="90" y2="190"></line>
+                                                            <text orientation="bottom" width="352" height="30"
+                                                                type="category" x="90" y="198" stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="middle">
+                                                                <tspan x="90" dy="0.71em">Page A</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="bottom" width="352" height="30"
+                                                                type="category" x="80" y="190"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="200.66666666666669" y1="196"
+                                                                x2="200.66666666666669" y2="190"></line><text
+                                                                orientation="bottom" width="352" height="30"
+                                                                type="category" x="200.66666666666669" y="198"
+                                                                stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="middle">
+                                                                <tspan x="200.66666666666669" dy="0.71em">Page C</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="bottom" width="352" height="30"
+                                                                type="category" x="80" y="190"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="311.33333333333337" y1="196"
+                                                                x2="311.33333333333337" y2="190"></line><text
+                                                                orientation="bottom" width="352" height="30"
+                                                                type="category" x="311.33333333333337" y="198"
+                                                                stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="middle">
+                                                                <tspan x="311.33333333333337" dy="0.71em">Page E</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="bottom" width="352" height="30"
+                                                                type="category" x="80" y="190"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="422" y1="196" x2="422" y2="190"></line>
+                                                            <text orientation="bottom" width="352" height="30"
+                                                                type="category" x="422" y="198" stroke="none"
+                                                                fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="middle">
+                                                                <tspan x="422" dy="0.71em">Page G</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis">
+                                                    <line orientation="left" width="60" height="185" type="number"
+                                                        x="20" y="5" class="recharts-cartesian-axis-line" stroke="#666"
+                                                        fill="none" x1="80" y1="5" x2="80" y2="190"></line>
+                                                    <g class="recharts-cartesian-axis-ticks">
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="left" width="60" height="185"
+                                                                type="number" x="20" y="5"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="74" y1="190" x2="80" y2="190"></line>
+                                                            <text orientation="left" width="60" height="185"
+                                                                type="number" x="72" y="190" stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="end">
+                                                                <tspan x="72" dy="0.355em">0</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="left" width="60" height="185"
+                                                                type="number" x="20" y="5"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="74" y1="143.75" x2="80" y2="143.75">
+                                                            </line><text orientation="left" width="60" height="185"
+                                                                type="number" x="72" y="143.75" stroke="none"
+                                                                fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="end">
+                                                                <tspan x="72" dy="0.355em">2500</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="left" width="60" height="185"
+                                                                type="number" x="20" y="5"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="74" y1="97.5" x2="80" y2="97.5"></line>
+                                                            <text orientation="left" width="60" height="185"
+                                                                type="number" x="72" y="97.5" stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="end">
+                                                                <tspan x="72" dy="0.355em">5000</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="left" width="60" height="185"
+                                                                type="number" x="20" y="5"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="74" y1="51.25" x2="80" y2="51.25">
+                                                            </line><text orientation="left" width="60" height="185"
+                                                                type="number" x="72" y="51.25" stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="end">
+                                                                <tspan x="72" dy="0.355em">7500</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-cartesian-axis-tick">
+                                                            <line orientation="left" width="60" height="185"
+                                                                type="number" x="20" y="5"
+                                                                class="recharts-cartesian-axis-tick-line" stroke="#666"
+                                                                fill="none" x1="74" y1="5" x2="80" y2="5"></line><text
+                                                                orientation="left" width="60" height="185" type="number"
+                                                                x="72" y="12" stroke="none" fill="#666"
+                                                                class="recharts-text recharts-cartesian-axis-tick-value"
+                                                                text-anchor="end">
+                                                                <tspan x="72" dy="0.355em">10000</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g class="recharts-cartesian-grid">
+                                                    <g class="recharts-cartesian-grid-horizontal">
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="80" y1="190" x2="432" y2="190"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="80" y1="143.75" x2="432" y2="143.75"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="80" y1="97.5" x2="432" y2="97.5"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="80" y1="51.25" x2="432" y2="51.25"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="80" y1="5" x2="432" y2="5"></line>
+                                                    </g>
+                                                    <g class="recharts-cartesian-grid-vertical">
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="90" y1="5" x2="90" y2="190"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="200.66666666666669" y1="5" x2="200.66666666666669"
+                                                            y2="190"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="311.33333333333337" y1="5" x2="311.33333333333337"
+                                                            y2="190"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="422" y1="5" x2="422" y2="190"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="80" y1="5" x2="80" y2="190"></line>
+                                                        <line stroke-dasharray="3 3" stroke="#ccc" fill="none" x="80"
+                                                            y="5" width="352" height="185" offset="[object Object]"
+                                                            x1="432" y1="5" x2="432" y2="190"></line>
+                                                    </g>
+                                                </g>
+                                                <g class="recharts-layer recharts-bar">
+                                                    <g class="recharts-layer recharts-bar-rectangles">
+                                                        <path name="Page A" x="79.33333333333334" y="5" width="20"
+                                                            height="185" fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 79.33333333333334,5 h 20 v 185 h -20 Z">
+                                                        </path>
+                                                        <path name="Page B" x="134.66666666666669" y="5" width="20"
+                                                            height="185" fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 134.66666666666669,5 h 20 v 185 h -20 Z">
+                                                        </path>
+                                                        <path name="Page C" x="190.00000000000003" y="5" width="20"
+                                                            height="185" fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 190.00000000000003,5 h 20 v 185 h -20 Z">
+                                                        </path>
+                                                        <path name="Page D" x="245.33333333333334" y="5" width="20"
+                                                            height="185" fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 245.33333333333334,5 h 20 v 185 h -20 Z">
+                                                        </path>
+                                                        <path name="Page E" x="300.66666666666674" y="5" width="20"
+                                                            height="185" fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 300.66666666666674,5 h 20 v 185 h -20 Z">
+                                                        </path>
+                                                        <path name="Page F" x="356" y="5" width="20" height="185"
+                                                            fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 356,5 h 20 v 185 h -20 Z"></path>
+                                                        <path name="Page G" x="411.33333333333337" y="5" width="20"
+                                                            height="185" fill="#eee"
+                                                            class="recharts-rectangle recharts-bar-background-rectangle"
+                                                            radius="0" d="M 411.33333333333337,5 h 20 v 185 h -20 Z">
+                                                        </path>
+                                                        <g class="recharts-layer">
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20"
+                                                                    height="44.400000000000006" name="Page A"
+                                                                    x="79.33333333333334" y="145.6" radius="0"
+                                                                    class="recharts-rectangle"
+                                                                    d="M 79.33333333333334,145.6 h 20 v 44.400000000000006 h -20 Z">
+                                                                </path>
+                                                            </g>
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20" height="25.863"
+                                                                    name="Page B" x="134.66666666666669" y="164.137"
+                                                                    radius="0" class="recharts-rectangle"
+                                                                    d="M 134.66666666666669,164.137 h 20 v 25.863 h -20 Z">
+                                                                </path>
+                                                            </g>
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20" height="181.3"
+                                                                    name="Page C" x="190.00000000000003"
+                                                                    y="8.699999999999989" radius="0"
+                                                                    class="recharts-rectangle"
+                                                                    d="M 190.00000000000003,8.699999999999989 h 20 v 181.3 h -20 Z">
+                                                                </path>
+                                                            </g>
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20"
+                                                                    height="72.29800000000002" name="Page D"
+                                                                    x="245.33333333333334" y="117.70199999999998"
+                                                                    radius="0" class="recharts-rectangle"
+                                                                    d="M 245.33333333333334,117.70199999999998 h 20 v 72.29800000000002 h -20 Z">
+                                                                </path>
+                                                            </g>
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20" height="88.8"
+                                                                    name="Page E" x="300.66666666666674" y="101.2"
+                                                                    radius="0" class="recharts-rectangle"
+                                                                    d="M 300.66666666666674,101.2 h 20 v 88.8 h -20 Z">
+                                                                </path>
+                                                            </g>
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20" height="70.3"
+                                                                    name="Page F" x="356" y="119.7" radius="0"
+                                                                    class="recharts-rectangle"
+                                                                    d="M 356,119.7 h 20 v 70.3 h -20 Z"></path>
+                                                            </g>
+                                                            <g class="recharts-layer recharts-bar-rectangle">
+                                                                <path fill="#8884d8" width="20"
+                                                                    height="79.54999999999998" name="Page G"
+                                                                    x="411.33333333333337" y="110.45000000000002"
+                                                                    radius="0" class="recharts-rectangle"
+                                                                    d="M 411.33333333333337,110.45000000000002 h 20 v 79.54999999999998 h -20 Z">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="recharts-legend-wrapper"
+                                                style="position: absolute; width: 412px; height: auto; left: 20px; bottom: 5px;">
+                                                <ul class="recharts-default-legend"
+                                                    style="padding: 0px; margin: 0px; text-align: center;">
+                                                    <li class="recharts-legend-item legend-item-0"
+                                                        style="display: inline-block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#8884d8" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(136, 132, 216);">pv</span></li>
+                                                </ul>
+                                            </div>
+                                            <div tabindex="0"
+                                                class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom"
+                                                style="pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px; transform: translate(210.667px, 68px);">
+                                                <div class="recharts-default-tooltip"
+                                                    style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); white-space: nowrap;">
+                                                    <p class="recharts-tooltip-label" style="margin: 0px;">Page C</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 p-2 justify-content-center align-items-center">
+                            <div class="barchart-data chart-bg border h-100 ">
+                                <div class="title-wrapper">
+                                    <div class="graph-title-wrapper">
+                                        <p class="graph-title">Mutual Fund</p>
+                                    </div>
+                                </div>
+                                <div class="pie-chart-wrapper chart-bg w-100 h-100">
+                                    <div class="recharts-responsive-container" width="464" height="296"
+                                        style="width: 100%; height: 100%;">
+                                        <div class="recharts-wrapper"
+                                            style="position: relative; cursor: default; width: 464px; height: 296px;">
+                                            <svg cx="50%" cy="50%" class="recharts-surface" width="464" height="296"
+                                                viewBox="0 0 464 296" version="1.1">
+                                                <defs>
+                                                    <clipPath id="recharts4-clip">
+                                                        <rect x="5" y="5" height="286" width="364.765625"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <g class="recharts-layer recharts-pie">
+                                                    <g class="recharts-layer">
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group A" cx="187.3828125" cy="148"
+                                                                fill="#0088FE" stroke="#fff" class="recharts-sector" d="M 287.3828125,148
+    A 100,100,0,
+    0,0,
+    137.38281250000003,61.39745962155612
+  L 157.3828125,96.03847577293368
+            A 60,60,0,
+            0,1,
+            247.3828125,148 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group B" cx="187.3828125" cy="148"
+                                                                fill="#00C49F" stroke="#fff" class="recharts-sector" d="M 137.38281250000003,61.39745962155612
+    A 100,100,0,
+    0,0,
+    100.78027212155614,198
+  L 135.42128827293368,178
+            A 60,60,0,
+            0,1,
+            157.3828125,96.03847577293368 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group C" cx="187.3828125" cy="148"
+                                                                fill="#FFBB28" stroke="#fff" class="recharts-sector" d="M 100.78027212155614,198
+    A 100,100,0,
+    0,0,
+    237.3828125,234.60254037844385
+  L 217.3828125,199.96152422706632
+            A 60,60,0,
+            0,1,
+            135.42128827293368,178 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group D" cx="187.3828125" cy="148"
+                                                                fill="#FF8042" stroke="#fff" class="recharts-sector" d="M 237.3828125,234.60254037844385
+    A 100,100,0,
+    0,0,
+    287.3828125,148.00000000000003
+  L 247.3828125,148.00000000000003
+            A 60,60,0,
+            0,1,
+            217.3828125,199.96152422706632 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-pie-labels">
+                                                        <g class="recharts-layer">
+                                                            <path cx="187.3828125" cy="148" fill="none" stroke="#0088FE"
+                                                                name="Group A" points="[object Object],[object Object]"
+                                                                type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M237.3828125,61.39745962155614L247.3828125,44.076951545867374">
+                                                            </path><text cx="187.3828125" cy="148" fill="#0088FE"
+                                                                stroke="none" name="Group A" x="247.3828125"
+                                                                y="44.076951545867374" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="start">
+                                                                <tspan x="247.3828125" dy="0em">400</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="187.3828125" cy="148" fill="none" stroke="#00C49F"
+                                                                name="Group B" points="[object Object],[object Object]"
+                                                                type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M90.79022987109317,122.1180954897479L71.47171334531181,116.94171458769748">
+                                                            </path><text cx="187.3828125" cy="148" fill="#00C49F"
+                                                                stroke="none" name="Group B" x="71.47171334531181"
+                                                                y="116.94171458769748" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="end">
+                                                                <tspan x="71.47171334531181" dy="0em">300</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="187.3828125" cy="148" fill="none" stroke="#FFBB28"
+                                                                name="Group C" points="[object Object],[object Object]"
+                                                                type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M161.50090798974793,244.59258262890683L156.32452708769753,263.9110991546882">
+                                                            </path><text cx="187.3828125" cy="148" fill="#FFBB28"
+                                                                stroke="none" name="Group C" x="156.32452708769753"
+                                                                y="263.9110991546882" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="end">
+                                                                <tspan x="156.32452708769753" dy="0em">300</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="187.3828125" cy="148" fill="none" stroke="#FF8042"
+                                                                name="Group D" points="[object Object],[object Object]"
+                                                                type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M273.98535287844385,198.00000000000006L291.30586095413264,208.00000000000006">
+                                                            </path><text cx="187.3828125" cy="148" fill="#FF8042"
+                                                                stroke="none" name="Group D" x="291.30586095413264"
+                                                                y="208.00000000000006" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="start">
+                                                                <tspan x="291.30586095413264" dy="0em">200</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="recharts-legend-wrapper"
+                                                style="position: absolute; width: auto; height: auto; right: 5px; top: 98px;">
+                                                <ul class="recharts-default-legend"
+                                                    style="padding: 0px; margin: 0px; text-align: left;">
+                                                    <li class="recharts-legend-item legend-item-0"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#0088FE" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(0, 136, 254);">Group A</span></li>
+                                                    <li class="recharts-legend-item legend-item-1"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#00C49F" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(0, 196, 159);">Group B</span></li>
+                                                    <li class="recharts-legend-item legend-item-2"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#FFBB28" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(255, 187, 40);">Group C</span></li>
+                                                    <li class="recharts-legend-item legend-item-3"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#FF8042" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(255, 128, 66);">Group D</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 p-2 mt-3">
+                            <div class="barchart-data chart-bg border h-100 ">
+                                <div class="title-wrapper">
+                                    <div class="graph-title-wrapper">
+                                        <p class="graph-title">Mutual Fund</p>
+                                    </div>
+                                </div>
+                                <div class="pie-chart-wrapper chart-bg w-100 h-100">
+                                    <div class="recharts-responsive-container" width="294" height="223"
+                                        style="width: 100%; height: 100%;">
+                                        <div class="recharts-wrapper"
+                                            style="position: relative; cursor: default; width: 294px; height: 223px;">
+                                            <svg cx="50%" cy="50%" class="recharts-surface" width="294" height="223"
+                                                viewBox="0 0 294 223" version="1.1">
+                                                <defs>
+                                                    <clipPath id="recharts6-clip">
+                                                        <rect x="5" y="5" height="213" width="194.765625"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <g class="recharts-layer recharts-pie">
+                                                    <g class="recharts-layer">
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group A" cx="102.3828125" cy="111.5"
+                                                                fill="#0088FE" stroke="#fff" class="recharts-sector" d="M 152.3828125,111.5
+    A 50,50,0,
+    0,0,
+    77.38281250000001,68.19872981077806
+  L 102.3328125,111.41339745962155
+            A 0.1,0.1,0,
+            0,1,
+            102.4828125,111.5 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group B" cx="102.3828125" cy="111.5"
+                                                                fill="#00C49F" stroke="#fff" class="recharts-sector" d="M 77.38281250000001,68.19872981077806
+    A 50,50,0,
+    0,0,
+    59.08154231077807,136.5
+  L 102.29620995962155,111.55
+            A 0.1,0.1,0,
+            0,1,
+            102.3328125,111.41339745962155 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group C" cx="102.3828125" cy="111.5"
+                                                                fill="#FFBB28" stroke="#fff" class="recharts-sector" d="M 59.08154231077807,136.5
+    A 50,50,0,
+    0,0,
+    127.3828125,154.80127018922192
+  L 102.4328125,111.58660254037845
+            A 0.1,0.1,0,
+            0,1,
+            102.29620995962155,111.55 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group D" cx="102.3828125" cy="111.5"
+                                                                fill="#FF8042" stroke="#fff" class="recharts-sector" d="M 127.3828125,154.80127018922192
+    A 50,50,0,
+    0,0,
+    152.3828125,111.50000000000001
+  L 102.4828125,111.5
+            A 0.1,0.1,0,
+            0,1,
+            102.4328125,111.58660254037845 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-pie-labels">
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#0088FE" name="Group A"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M127.3828125,68.19872981077808L137.3828125,50.8782217350893">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#0088FE"
+                                                                stroke="none" name="Group A" x="137.3828125"
+                                                                y="50.8782217350893" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="start">
+                                                                <tspan x="137.3828125" dy="0em">400</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#00C49F" name="Group B"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M54.08652118554659,98.55904774487395L34.768004659765225,93.38266684282353">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#00C49F"
+                                                                stroke="none" name="Group B" x="34.768004659765225"
+                                                                y="93.38266684282353" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="end">
+                                                                <tspan x="34.768004659765225" dy="0em">300</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#FFBB28" name="Group C"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M89.44186024487396,159.7962913144534L84.26547934282355,179.1148078402348">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#FFBB28"
+                                                                stroke="none" name="Group C" x="84.26547934282355"
+                                                                y="179.1148078402348" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="end">
+                                                                <tspan x="84.26547934282355" dy="0em">300</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#FF8042" name="Group D"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M145.68408268922192,136.50000000000003L163.0045907649107,146.50000000000003">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#FF8042"
+                                                                stroke="none" name="Group D" x="163.0045907649107"
+                                                                y="146.50000000000003" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="start">
+                                                                <tspan x="163.0045907649107" dy="0em">200</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="recharts-legend-wrapper"
+                                                style="position: absolute; width: auto; height: auto; right: 5px; top: 61.5px;">
+                                                <ul class="recharts-default-legend"
+                                                    style="padding: 0px; margin: 0px; text-align: left;">
+                                                    <li class="recharts-legend-item legend-item-0"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#0088FE" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(0, 136, 254);">Group A</span></li>
+                                                    <li class="recharts-legend-item legend-item-1"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#00C49F" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(0, 196, 159);">Group B</span></li>
+                                                    <li class="recharts-legend-item legend-item-2"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#FFBB28" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(255, 187, 40);">Group C</span></li>
+                                                    <li class="recharts-legend-item legend-item-3"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#FF8042" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(255, 128, 66);">Group D</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 p-2 mt-3">
+                            <div class="barchart-data chart-bg border h-100 ">
+                                <div class="title-wrapper">
+                                    <div class="graph-title-wrapper">
+                                        <p class="graph-title">Mutual Fund</p>
+                                    </div>
+                                </div>
+                                <div class="pie-chart-wrapper chart-bg w-100 h-100">
+                                    <div class="recharts-responsive-container" width="294" height="223"
+                                        style="width: 100%; height: 100%;">
+                                        <div class="recharts-wrapper"
+                                            style="position: relative; cursor: default; width: 294px; height: 223px;">
+                                            <svg cx="50%" cy="50%" class="recharts-surface" width="294" height="223"
+                                                viewBox="0 0 294 223" version="1.1">
+                                                <defs>
+                                                    <clipPath id="recharts8-clip">
+                                                        <rect x="5" y="5" height="213" width="194.765625"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                                <g class="recharts-layer recharts-pie">
+                                                    <g class="recharts-layer">
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group A" cx="102.3828125" cy="111.5"
+                                                                fill="#0088FE" stroke="#fff" class="recharts-sector" d="M 152.3828125,111.5
+    A 50,50,0,
+    0,0,
+    77.38281250000001,68.19872981077806
+  L 102.3328125,111.41339745962155
+            A 0.1,0.1,0,
+            0,1,
+            102.4828125,111.5 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group B" cx="102.3828125" cy="111.5"
+                                                                fill="#00C49F" stroke="#fff" class="recharts-sector" d="M 77.38281250000001,68.19872981077806
+    A 50,50,0,
+    0,0,
+    59.08154231077807,136.5
+  L 102.29620995962155,111.55
+            A 0.1,0.1,0,
+            0,1,
+            102.3328125,111.41339745962155 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group C" cx="102.3828125" cy="111.5"
+                                                                fill="#FFBB28" stroke="#fff" class="recharts-sector" d="M 59.08154231077807,136.5
+    A 50,50,0,
+    0,0,
+    127.3828125,154.80127018922192
+  L 102.4328125,111.58660254037845
+            A 0.1,0.1,0,
+            0,1,
+            102.29620995962155,111.55 Z"></path>
+                                                        </g>
+                                                        <g class="recharts-layer recharts-pie-sector">
+                                                            <path name="Group D" cx="102.3828125" cy="111.5"
+                                                                fill="#FF8042" stroke="#fff" class="recharts-sector" d="M 127.3828125,154.80127018922192
+    A 50,50,0,
+    0,0,
+    152.3828125,111.50000000000001
+  L 102.4828125,111.5
+            A 0.1,0.1,0,
+            0,1,
+            102.4328125,111.58660254037845 Z"></path>
+                                                        </g>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-pie-labels">
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#0088FE" name="Group A"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M127.3828125,68.19872981077808L137.3828125,50.8782217350893">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#0088FE"
+                                                                stroke="none" name="Group A" x="137.3828125"
+                                                                y="50.8782217350893" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="start">
+                                                                <tspan x="137.3828125" dy="0em">400</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#00C49F" name="Group B"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M54.08652118554659,98.55904774487395L34.768004659765225,93.38266684282353">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#00C49F"
+                                                                stroke="none" name="Group B" x="34.768004659765225"
+                                                                y="93.38266684282353" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="end">
+                                                                <tspan x="34.768004659765225" dy="0em">300</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#FFBB28" name="Group C"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M89.44186024487396,159.7962913144534L84.26547934282355,179.1148078402348">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#FFBB28"
+                                                                stroke="none" name="Group C" x="84.26547934282355"
+                                                                y="179.1148078402348" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="end">
+                                                                <tspan x="84.26547934282355" dy="0em">300</tspan>
+                                                            </text>
+                                                        </g>
+                                                        <g class="recharts-layer">
+                                                            <path cx="102.3828125" cy="111.5" fill="none"
+                                                                stroke="#FF8042" name="Group D"
+                                                                points="[object Object],[object Object]" type="linear"
+                                                                class="recharts-curve recharts-pie-label-line"
+                                                                d="M145.68408268922192,136.50000000000003L163.0045907649107,146.50000000000003">
+                                                            </path><text cx="102.3828125" cy="111.5" fill="#FF8042"
+                                                                stroke="none" name="Group D" x="163.0045907649107"
+                                                                y="146.50000000000003" alignment-baseline="middle"
+                                                                class="recharts-text recharts-pie-label-text"
+                                                                text-anchor="start">
+                                                                <tspan x="163.0045907649107" dy="0em">200</tspan>
+                                                            </text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <div class="recharts-legend-wrapper"
+                                                style="position: absolute; width: auto; height: auto; right: 5px; top: 61.5px;">
+                                                <ul class="recharts-default-legend"
+                                                    style="padding: 0px; margin: 0px; text-align: left;">
+                                                    <li class="recharts-legend-item legend-item-0"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#0088FE" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(0, 136, 254);">Group A</span></li>
+                                                    <li class="recharts-legend-item legend-item-1"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#00C49F" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(0, 196, 159);">Group B</span></li>
+                                                    <li class="recharts-legend-item legend-item-2"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#FFBB28" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(255, 187, 40);">Group C</span></li>
+                                                    <li class="recharts-legend-item legend-item-3"
+                                                        style="display: block; margin-right: 10px;"><svg
+                                                            class="recharts-surface" width="14" height="14"
+                                                            viewBox="0 0 32 32" version="1.1"
+                                                            style="display: inline-block; vertical-align: middle; margin-right: 4px;">
+                                                            <path stroke="none" fill="#FF8042" d="M0,4h32v24h-32z"
+                                                                class="recharts-legend-icon"></path>
+                                                        </svg><span class="recharts-legend-item-text"
+                                                            style="color: rgb(255, 128, 66);">Group D</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 p-2 mt-3">
+                            <div class="top-gainer-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">TOP GAINER FUNDS</th>
+                                            <th scope="col">WEEK</th>
+                                            <th scope="col">MONTH</th>
+                                            <th scope="col">YEAR</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">TOP GAINER FUNDS</td>
+                                            <td>5%</td>
+                                            <td>8%</td>
+                                            <td>12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">TOP GAINER FUNDS</td>
+                                            <td>8%</td>
+                                            <td>6%</td>
+                                            <td>8%</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">TOP GAINER FUNDS</td>
+                                            <td>3%</td>
+                                            <td>4%</td>
+                                            <td>15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">TOP GAINER FUNDS</td>
+                                            <td>9%</td>
+                                            <td>3%</td>
+                                            <td>19%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="line-divider"></div>
+                        <div class="col-lg-3 col-sm-12 p-2 mb-2">
+                            <div class="card-fund-wrapper">
+                                <div class="title">
+                                    <p class="">MUTUAL FUND</p>
+                                </div>
+                                <div class="card-details">
+                                    <div><span class="profit-loss">P&amp;L</span>
+                                        <h4 class="profit-loss-no">450.8</h4>
+                                    </div>
+                                    <div><span class="status">status</span>
+                                        <h5 class="status-detail">+2.51%</h5>
+                                    </div>
+                                    <div><span class="invested">Invested</span>
+                                        <h4 class="invested-money">45.50K</h4>
+                                    </div>
+                                    <div><span class="current">Current</span>
+                                        <h5 class="current-value">+46.40k</h5>
+                                    </div>
+                                    <div><span class="current">Current</span><img class="current-img"
+                                            src="/static/media/solid_suitcase.c77399de.svg" alt="Suitcase"></div>
+                                    <div><span class="upcoming-sip">Upcoming SIP</span>
+                                        <h5 class="upcoming-sip-detail">02</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 p-2 mb-2">
+                            <div class="card-fund-wrapper">
+                                <div class="title">
+                                    <p class="">FIXED DEPOSIT</p>
+                                </div>
+                                <div class="card-details">
+                                    <div><span class="profit-loss">P&amp;L</span>
+                                        <h4 class="profit-loss-no">450.8</h4>
+                                    </div>
+                                    <div><span class="status">status</span>
+                                        <h5 class="status-detail">+2.51%</h5>
+                                    </div>
+                                    <div><span class="invested">Invested</span>
+                                        <h4 class="invested-money">45.50K</h4>
+                                    </div>
+                                    <div><span class="current">Current</span>
+                                        <h5 class="current-value">+46.40k</h5>
+                                    </div>
+                                    <div><span>Current</span><span></span></div>
+                                    <div><span class="upcoming-sip">Upcoming SIP</span>
+                                        <h5 class="upcoming-sip-detail">02</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 p-2 mb-2">
+                            <div class="card-fund-wrapper">
+                                <div class="title">
+                                    <p class="">PPF</p>
+                                </div>
+                                <div class="card-details">
+                                    <div><span class="profit-loss">P&amp;L</span>
+                                        <h4 class="profit-loss-no">450.8</h4>
+                                    </div>
+                                    <div><span class="status">status</span>
+                                        <h5 class="status-detail">+2.51%</h5>
+                                    </div>
+                                    <div><span class="invested">Invested</span>
+                                        <h4 class="invested-money">45.50K</h4>
+                                    </div>
+                                    <div><span class="current">Current</span>
+                                        <h5 class="current-value">+46.40k</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 p-2 ">
+                            <div class="card-fund-wrapper">
+                                <div class="title">
+                                    <p class="">PPF</p>
+                                </div>
+                                <div class="card-details">
+                                    <div><span class="profit-loss">P&amp;L</span>
+                                        <h4 class="profit-loss-no">450.8</h4>
+                                    </div>
+                                    <div><span class="status">status</span>
+                                        <h5 class="status-detail">+2.51%</h5>
+                                    </div>
+                                    <div><span class="invested">Invested</span>
+                                        <h4 class="invested-money">45.50K</h4>
+                                    </div>
+                                    <div><span class="current">Current</span>
+                                        <h5 class="current-value">+46.40k</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+            </div>
+        </div>  
+    
+    </main>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+.fund-list {
+    .list-link {
+        position: relative;
+        padding-right: 0.625rem;
+        margin-right: 0.625rem;
+        vertical-align: middle;
+        font-size: $font-size-normal;
+        font-weight: $font-size-normal;
+        color: $color-black;
+        line-height: 1.594rem;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 0.875rem;
+            margin:auto;
+            width: 0.063rem;
+            background-color: $color-black;
+            color: $color-black;
+            right: 0;
+            top: 0.063rem;
+            &:last-child {
+                    position: unset;
+                    height: unset;
+                    margin:unset;
+                    width: unset;
+                    background-color: unset;
+                    color: unset;
+                    right: unset;
+                    top: unset;
+            }
+        }
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+.fund-update-list-wrapper {
+    .list-item{
+        padding: 1.563rem 2.688rem;
+        border-top: 0.063rem solid $color-white;
+        .list-link {
+            font-size: $font-size-normal;
+            color: $color-black;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+.calculator-tab-wrapper {
+    .nav {
+        width: 20%;
+        .nav-link {
+            background: none;
+            text-align: left;
+            padding: 1.25rem;
+            display: flex;
+            border-bottom: 0.063rem dashed $global-font-title;
+            font-weight: $font-weight-semi-bold;
+            color: $global-font-color;
+            p {
+                margin: 0;
+            }
+            &.active {
+                background:transparent;
+                color: $primary-color;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        @media (max-width:61.938rem) {
+            width: 100%;
+        }
+    }
+}

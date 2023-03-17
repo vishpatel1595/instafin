@@ -1,0 +1,28 @@
+.sidebar {
+    flex: 0 0 12.5rem;
+    max-width: 12.5rem;
+    height: 100%;
+
+    ul {
+        overflow-y: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh;
+
+        li {
+            a {
+                font-size: $font-size-normal;
+                color: $color-black;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    @media (max-width:48rem) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

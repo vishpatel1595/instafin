@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Instafin</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="Navbar" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <figure class="mb-0"><img src="assets/web-asset/images/logo.svg" class="brand-logo" alt=""></figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg width='30' height='30'>
+                            <path d='M0,5 30,5' stroke='#fff' stroke-width='5' />
+                            <path d='M0,14 30,14' stroke='#fff' stroke-width='5' />
+                            <path d='M0,23 30,23' stroke='#fff' stroke-width='5' />
+                        </svg>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Mutual Fund</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buy Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Financial Planning
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="#">Action</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Accounts & Finance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">CRM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Utility</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-wrapper-web h-100">
+        <div class="container h-100">
+            <div
+                class="distribution-selection-wrapper d-flex justify-content-between align-items-center flex-wrap mt-2 mb-4">
+                <div class="section-title-wrapper mt-0">
+                    <h5 class="section-title-app mb-0 text-start">Mutual Fund SIPs Holding</h5>
+                </div>
+            </div>
+            <div class="client-wrapper mf-sip-wrapper h-100">
+                <div class="row w-100 m-0 p-0">
+                    <div class="col-md-2 col-sm-12 p-1">
+                        <div class="no-holding-wrapper">
+                            <p class="no-holding-title">No. of Holdings</p>
+                            <p class="no-holding"><span>2</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <div class="d-flex justify-content-between flex-wrap w-100 mf-bg-wrapper">
+                            <div class="totalsip-wrapper">
+                                <p class="totalsip-title">Sip Total</p>
+                                <p class="totalsip"><span class="bi bi-currency-rupee me-2"></span><span> 5600</span>
+                                </p>
+                            </div>
+                            <div class="active-sip-wrapper">
+                                <p class="active-sip-title"> Active</p>
+                                <p class="active-sip">5</p>
+                            </div>
+                            <div class="paused-sip-wrapper">
+                                <p class="paused-sip-title">Paused</p>
+                                <p class="paused-sip mb-0">0</p>
+                            </div>
+                            <div class="conditional-wrapper">
+                                <p class="conditional-title">Conditional</p>
+                                <p class="conditional mb-0">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="upcomming-sip-wrapper">
+                            <span class="bi bi-calendar-check upcoming-sip-icon"></span>
+                            <div>
+                                <p><span>UpComing SIPS </span><span>0</span></p>
+                                <button class="custom-btn-1 btn-sm">Pending payment</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2 d-flex justify-content-md-end align-items-center flex-wrap">
+                        <button type="button" class="btn btn-mf-sip-holding"><span
+                                class="bi bi-currency-rupee"></span>Pending Payments</button>
+                        <button type="button" class="btn btn-mf-sip-holding"><span class="bi-file-ruled"></span>
+                            Analytics</button>
+                        <button type="button" class="btn btn-mf-sip-holding"><span class="bi bi-"></span> ELSS
+                            Statement</button>
+                        <button type="button" class="btn btn-mf-sip-holding"><span class="bi bi-lock"></span> CDSL
+                            Authorisation</button>
+                    </div>
+                    <div class="col-md-12 card rounded">
+                        <ul class="mfholding-list-wrapper">
+                            <li class="fund-item">
+                                <div class="row mt-2 holdings-header">
+                                    <div class="col-md-5 col-sm-12">Funds</div>
+                                    <div class="col-md-2 col-sm-3 text-center">Invested</div>
+                                    <div class="col-md-2 col-sm-3 text-center">Current</div>
+                                    <div class="col-md-2 col-sm-3 text-center">Profit / loss</div>
+                                    <div class="col-md-1 col-sm-3 text-center"></div>
+                                </div>
+                            </li>
+                            <li class="fund-item">
+                                <div class="holding-data-container">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-12">
+                                            <div class="d-flex">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/small-cap.png" class="fund-img"
+                                                        alt="img">
+                                                </figure>
+                                                <div class="holding-content">
+                                                    <p class="text-start fund-name m-0 p-0">ICICI Prudential Business
+                                                        Cycle Fund
+                                                    </p>
+                                                    <div class="text-start fund-additional-details">
+                                                        <div class="font-12 me-2">Growth</div>
+                                                        <div class="font-12 me-2">Equity</div>
+                                                        <div class="font-12 ">Sectoral/Thematic</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-4 d-flex flex-column text-center">
+                                            <label class="mobile-label">Invested</label>
+                                            <span></span>500rs</div>
+                                        <div class="col-md-2 col-3 d-flex flex-column text-center">
+                                            <label class="mobile-label">Current</label>
+                                           <span> 505 </span> </div>
+                                        <div class="col-md-2 col-3 d-flex flex-column text-center">
+                                            <label class="mobile-label">P&L</label>
+                                            <span>5</span></div>
+                                        <div class="col-md-1 col-2">
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class=" bg-transparent border-0 dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="bi bi-three-dots-vertical"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Invest</a></li>
+                                                        <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                                        <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                                        <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fund-item">
+                                <div class="holding-data-container">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-12">
+                                            <div class="d-flex">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/small-cap.png" class="fund-img"
+                                                        alt="img">
+                                                </figure>
+                                                <div class="holding-content">
+                                                    <p class="text-start fund-name m-0 p-0">ICICI Prudential Business
+                                                        Cycle Fund
+                                                    </p>
+                                                    <div class="text-start fund-additional-details">
+                                                        <div class="font-12 me-2">Growth</div>
+                                                        <div class="font-12 me-2">Equity</div>
+                                                        <div class="font-12 ">Sectoral/Thematic</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-4 d-flex flex-column text-center">
+                                            <label class="mobile-label">Invested</label>
+                                            <span></span>500rs</div>
+                                        <div class="col-md-2 col-3 d-flex flex-column text-center">
+                                            <label class="mobile-label">Current</label>
+                                           <span> 505 </span> </div>
+                                        <div class="col-md-2 col-3 d-flex flex-column text-center">
+                                            <label class="mobile-label">P&L</label>
+                                            <span>5</span></div>
+                                        <div class="col-md-1 col-2">
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class=" bg-transparent border-0 dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="bi bi-three-dots-vertical"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Invest</a></li>
+                                                        <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                                        <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                                        <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <div class="table-responsive">
+                            <table class="table mf-sip-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="2" class="text-start">Funds</th>
+                                        <th scope="col">Invested</th>
+                                        <th scope="col">Current</th>
+                                        <th scope="col">Profit/Loss</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="text-start">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/shield-investment.png"
+                                                        class="mf-table-img" alt="">
+                                                </figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-start fund-name">ICICI Prudential Business Cycle Fund
+                                                </h5>
+                                                <div class="text-start"><span class="font-12 me-2">Growth</span> <span
+                                                        class="font-12 me-2">Equity</span>
+                                                    <span class="font-12 ">Sectoral/Thematic</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>₹ 500</td>
+                                        <td>₹ 505</td>
+                                        <td>₹ 5</td>
+                                         <td>₹ 500/-</td> 
+                                        <td><div class="dropdown">
+                                            <button class=" bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <span class="bi bi-three-dots-vertical"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Invest</a></li>
+                                              <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                              <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                              <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                            </ul>
+                                          </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-start">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/shield-investment.png"
+                                                        class="mf-table-img" alt="">
+                                                </figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-start fund-name">ICICI Prudential Business Cycle Fund
+                                                </h5>
+                                                <div class="text-start"><span class="font-12 me-2">Growth</span> <span
+                                                        class="font-12 me-2">Equity</span>
+                                                    <span class="font-12 ">Sectoral/Thematic</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>₹ 500</td>
+                                        <td>₹ 505</td>
+                                        <td>₹ 5</td>
+                                        <td>₹ 500/-</td> 
+                                        <td><div class="dropdown">
+                                            <button class=" bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <span class="bi bi-three-dots-vertical"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Invest</a></li>
+                                              <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                              <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                              <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                            </ul>
+                                          </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-start">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/shield-investment.png"
+                                                        class="mf-table-img" alt="">
+                                                </figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-start fund-name">ICICI Prudential Business Cycle Fund
+                                                </h5>
+                                                <div class="text-start"><span class="font-12 me-2">Growth</span> <span
+                                                        class="font-12 me-2">Equity</span>
+                                                    <span class="font-12 ">Sectoral/Thematic</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>₹ 500</td>
+                                        <td>₹ 505</td>
+                                        <td>₹ 5</td>
+                                        <td>₹ 500/-</td> 
+                                        <td><div class="dropdown">
+                                            <button class=" bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <span class="bi bi-three-dots-vertical"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Invest</a></li>
+                                              <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                              <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                              <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                            </ul>
+                                          </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-start">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/shield-investment.png"
+                                                        class="mf-table-img" alt="">
+                                                </figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-start fund-name">ICICI Prudential Business Cycle Fund
+                                                </h5>
+                                                <div class="text-start"><span class="font-12 me-2">Growth</span> <span
+                                                        class="font-12 me-2">Equity</span>
+                                                    <span class="font-12 ">Sectoral/Thematic</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>₹ 500</td>
+                                        <td>₹ 505</td>
+                                        <td>₹ 5</td>
+                                         <td>₹ 500/-</td>
+                                        <td><div class="dropdown">
+                                            <button class=" bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <span class="bi bi-three-dots-vertical"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Invest</a></li>
+                                              <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                              <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                              <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                            </ul>
+                                          </div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-start">
+                                                <figure class="m-0 p-0">
+                                                    <img src="assets/web-asset/images/shield-investment.png"
+                                                        class="mf-table-img" alt="">
+                                                </figure>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <h5 class="text-start fund-name">ICICI Prudential Business Cycle Fund
+                                                </h5>
+                                                <div class="text-start"><span class="font-12 me-2">Growth</span> <span
+                                                        class="font-12 me-2">Equity</span>
+                                                    <span class="font-12 ">Sectoral/Thematic</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>₹ 500</td>
+                                        <td>₹ 505</td>
+                                        <td>₹ 5</td>
+                                         <td>₹ 500/-</td> 
+                                        <td><div class="dropdown">
+                                            <button class=" bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <span class="bi bi-three-dots-vertical"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Invest</a></li>
+                                              <li><a class="dropdown-item" href="#">Redeem</a></li>
+                                              <li><a class="dropdown-item" href="#">View Transaction</a></li>
+                                              <li><a class="dropdown-item" href="#">Switch Fund</a></li>
+                                            </ul>
+                                          </div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      -->
+</body>
+
+</html>

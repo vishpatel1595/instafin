@@ -1,0 +1,153 @@
+.custom-modal {
+    border: transparent;
+
+    .modal-dialog {
+        border: transparent;
+    }
+
+    .modal-header-content {
+        display: flex;
+        align-items: center;
+
+        .modal-header-img {
+            margin: 0;
+            padding: 0;
+            padding-right: 20px;
+
+            img {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        .modal-title-detail-wrapper {
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    padding: 10px 18px 10px 0;
+                    font-size: $font-size-normal;
+                }
+            }
+        }
+    }
+
+    .fund-btn {
+        border-radius: 3rem !important;
+        padding: 0.5rem 3.125rem !important;
+        border: 0.063rem solid;
+        font-size: $font-size-18;
+        font-weight: $font-weight-body;
+        background-color: $primary-color !important;
+        color: $color-white !important;
+    }
+
+    @media (max-width:991px) {
+        .modal-header-content {
+            .modal-header-img {
+                margin: 0;
+                padding: 0;
+                padding-right: 10px;
+
+                img {
+
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.warning-wrapper {
+    margin-top: 0.75rem;
+}
+
+.warining-content {
+    background: $light-yellow;
+    border-radius: 3.125rem;
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.875rem;
+
+    p {
+        padding-left: 0.938rem;
+        padding-right: 0.938rem;
+        word-wrap: break-word;
+    }
+}
+
+.mf-detail-modal {
+    .modal-dialog {
+        min-width: 80%;
+        overflow: hidden;
+
+        .modal-body {
+            .table-responsive {
+                
+            }
+            table {
+                width: 100%;
+                overflow: hidden !important;
+
+                thead {
+                    display: table;
+                    height: 100%;
+                    table-layout: fixed;
+                    background-color: $primary-color-lighter;
+                    border: none;
+                    th {
+                        padding: 10px 22px;
+                        min-width: 130px;
+                        text-align: center;
+                        border: none;
+                        vertical-align: middle;
+                        font-size: $font-size-normal;
+                        line-height: $font-line-height-body;
+                        font-weight: $font-weight-medium;
+                        
+                    }
+                }
+                .tbody-scroll {
+                    display: block;
+                    table-layout: fixed;
+                    max-height: 300px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    tr {
+                        td {
+                            padding: 10px 22px;
+                            min-width: 130px;
+                            text-align: center;
+                            vertical-align: middle;  
+                            font-size: $font-size-normal;
+                        line-height: $font-line-height-body;                         
+                        }
+                    }
+                }
+                tfoot {
+                    display: table;
+                    height: 100%;
+                    table-layout: fixed;
+                    width: 100%;
+                    tr {
+                        td {
+                            font-size: $font-size-normal;       
+                            padding: 10px 22px;
+                            min-width: 130px;
+                            text-align: center;
+                            vertical-align: middle;
+                            border-top: 1px solid ;
+                            font-size: $font-size-normal;
+                        line-height: $font-line-height-body;
+                        font-weight: $font-weight-medium;
+                        background-color: $primary-color-lighter;
+                    border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Instafin</title>
+</head>
+<body>
+    <header class="header">
+        <nav id="Navbar" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <figure class="mb-0"><img src="assets/web-asset/images/logo.svg" class="brand-logo" alt=""></figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg width='30' height='30'>
+                            <path d='M0,5 30,5' stroke='#fff' stroke-width='5' />
+                            <path d='M0,14 30,14' stroke='#fff' stroke-width='5' />
+                            <path d='M0,23 30,23' stroke='#fff' stroke-width='5' />
+                        </svg>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Mutual Fund</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buy Online</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Financial Planning
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item"><a class="nav-link" href="#">Action</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Accounts & Finance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">CRM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Utility</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-wrapper-web">
+        <div class="container-fluid">
+            <div class="distribution-selection-wrapper d-flex justify-content-between align-items-center mt-2 mb-4">
+                <div class="section-title-wrapper mt-0">
+                    <h5 class="section-title-app mb-0 text-start">Pay Premium</h5>
+                </div>
+            </div>
+            <div class="client-wrapper compare-mf-wrapper h-100">
+                <div class="row w-100 m-0 p-0">
+                    <div class="col-md-4 col-sm-12 mb-2 p-1">
+                        <div class="search-client-wrapper d-flex flex-wrap w-100 px-2 py-0">
+                            <div class="search form-group d-flex col-md-12 col-sm-12 w-sm-100">
+                                <input type="text" class="form-control form-control-custom"
+                                    placeholder="Search Mutual Fund">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-2 p-1">
+                        <div class="search-client-wrapper d-flex flex-wrap w-100 px-2 py-0">
+                            <div class="search form-group d-flex col-md-12 col-sm-12 w-sm-100">
+                                <input type="text" class="form-control form-control-custom"
+                                    placeholder="Search Mutual Fund">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 mb-2 p-1">
+                        <div class="search-client-wrapper d-flex flex-wrap w-100 px-2 py-0">
+                            <div class="search form-group d-flex col-md-12 col-sm-12 w-sm-100">
+                                <input type="text" class="form-control form-control-custom"
+                                    placeholder="Search Mutual Fund">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 mb-2 list-background">
+                        <ul class="mf-unorderlist">
+                            <h5 class="font-bold">List of Compare Fund</h5>
+                            <li class="fund-list"> <span class="bi bi-circle-fill text-danger me-2"></span> UTI Nifty 50
+                                Index Fund</li>
+                            <li class="fund-list"> <span class="bi bi-circle-fill text-success me-2"></span> UTI Nifty
+                                50 Index Fund</li>
+                            <li class="fund-list"> <span class="bi bi-circle-fill text-warning me-2"></span> UTI Nifty
+                                50 Index Fund</li>
+                            <li class="fund-list"> <span class="bi bi-circle-fill me-2"></span> UTI Nifty 50 Index Fund
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 text-center">
+                        <!-- i used img kindly use graph here -->
+                        <figure class="w-100 h-100">
+                            <img src="assets/web-asset/images/graph.png" class="img-fluid" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Fund Name</th>
+                                        <th scope="col">UTI Nifty 50 Index Fund</th>
+                                        <th scope="col">UTI Nifty 50 Index Fund</th>
+                                        <th scope="col">UTI Nifty 50 Index Fund</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Minimum investment Amount</td>
+                                        <td>5000</td>
+                                        <td>5000</td>
+                                        <td>5000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sub category</td>
+                                        <td>Growth</td>
+                                        <td>Growth</td>
+                                        <td>Growth</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type</td>
+                                        <td>Index Funds</td>
+                                        <td>Index Funds</td>
+                                        <td>Index Funds</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last update</td>
+                                        <td>2022-09-15</td>
+                                        <td>2022-09-15</td>
+                                        <td>2022-09-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Launch Date</td>
+                                        <td>2013-01-01</td>
+                                        <td>2013-01-01</td>
+                                        <td>2013-01-01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exit Load</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Expense ratio</td>
+                                        <td>0.21</td>
+                                        <td>0.21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CAGR returns (1 Year)</td>
+                                        <td>3.1915</td>
+                                        <td>3.1915</td>
+                                        <td>3.1915</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CAGR returns (2 Years)</td>
+                                        <td>25.8869</td>
+                                        <td>25.8869</td>
+                                        <td>25.8869</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CAGR returns (3 Years)</td>
+                                        <td>18.3447</td>
+                                        <td>18.3447</td>
+                                        <td>18.3447</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fund manager</td>
+                                        <td>Mr. Sharwan Kumar Goyal</td>
+                                        <td>Mr. Sharwan Kumar Goyal</td>
+                                        <td>Mr. Sharwan Kumar Goyal</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>

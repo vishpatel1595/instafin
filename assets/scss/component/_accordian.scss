@@ -1,0 +1,148 @@
+.style-1 {
+    .accordion-item {
+        .accordion-body {
+            overflow: hidden;
+            height: 18.75rem;
+            max-height: 18.75rem;
+
+            .accordian-checkbox-wrapper {
+                overflow-y: auto;
+                height: 100%;
+
+                .accodion-list {
+                    .form-check {
+                        input {
+                            box-shadow: none;
+                            outline: none;
+
+                            &:hover {
+                                box-shadow: none;
+                                outline: none;
+                            }
+
+                            &:focus {
+                                box-shadow: none;
+                                outline: none;
+                            }
+                        }
+
+                        .form-check-label {
+                            font-size: $font-size-small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.accodion-wrapper {
+    overflow: hidden;
+}
+
+.accordian-style-2 {
+    overflow-y: auto;
+    max-height: 20rem;
+    height: 20rem;
+
+    .accordion-button {
+        box-shadow: unset;
+
+        &:focus {
+            box-shadow: unset;
+        }
+
+        &:not(.collapsed) {
+            color: $primary-color;
+            background-color: $primary-color-lighter;
+        }
+
+        &::after {
+            background-image: url("../images/arrow-down.svg");
+        }
+    }
+}
+
+.mobile-menu-modal {
+    .accordion-button {
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: none !important;
+            color: $color-white;
+            background-color: $primary-color;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+            color: $color-white;
+            background-color: $primary-color;
+        }
+
+        &::after {
+            background-image: url("../images/arrow-down.svg") !important;
+        }
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $color-white;
+        background-color: $primary-color;
+        box-shadow: none;
+    }
+
+    .accordion-body {
+        .form-select {
+            box-shadow: none;
+            border-color: $primary-color;
+
+            option {
+                color: $global-font-color;
+                background-color: $color-white;
+                box-shadow: none;
+            }
+
+            option:checked {
+                background: transparent;
+                color: $primary-color;
+            }
+
+            option:hover {
+                background: transparent;
+                color: $primary-color;
+            }
+        }
+    }
+}
+.accordianstyle3 {
+    button {
+        color: $color-black !important;
+        font-size: $font-size-normal;
+        outline: none;
+        border: 1px solid transparent;
+
+        &::after {
+            content: none !important;
+        }
+
+        &:hover {
+            box-shadow: none !important;
+            outline: none !important;
+            border: 1px solid #7aaffc;
+            background: #7aaffc;
+        }
+
+        &.active {
+            box-shadow: none !important;
+            outline: none !important;
+            border: 1px solid #7aaffc;
+            background: #7aaffc;
+        }
+
+        &:focus {
+            box-shadow: none !important;
+            outline: none !important;
+            border: 1px solid #7aaffc;
+            background: #7aaffc;
+        }
+    }
+}

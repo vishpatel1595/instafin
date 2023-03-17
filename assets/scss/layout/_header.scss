@@ -1,0 +1,175 @@
+header {
+  position: relative;
+
+  .navbar {
+    background-color: $color-white;
+    padding: 0;
+
+    .navbar-brand {
+      color: $primary-color;
+      margin: 0;
+      padding: 0;
+
+      figure {
+        .brand-logo {
+          width: 7.75rem;
+          height: 3rem;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      padding: 0.313rem;
+
+      &:focus {
+        box-shadow: 0 0 0 0.05rem !important;
+      }
+    }
+
+    .navbar-toggler-icon {
+      svg {
+        path {
+          stroke: $secondary-color !important;
+          stroke-width: 3;
+        }
+      }
+    }
+
+    .navbar-nav {
+      li.nav-item {
+        position: relative;
+        .nav-link {
+          color: $nav-heading-color;
+          cursor: pointer;
+          padding: 0.938rem 0.938rem;
+          font-size: $font-size-normal;
+          transition-duration: 0.4s;
+          transition-timing-function: ease;
+          text-transform: capitalize;
+          &.active {
+            color: $primary-color;
+          }
+
+          @media (max-width: 61.938rem) {
+            padding: 0.938rem 0.938rem;
+          }
+        }
+        ul.sub-menu {
+          padding: 0;
+          top: 100%;
+          width: 18.75em;
+          position: absolute;
+          min-width: 13.75rem;
+          height: max-content;
+          background: $color-white;
+          width: max-content;
+          z-index: 999;
+          opacity: 0;
+          visibility: hidden;
+          transition-duration: 0.4s;
+          transition-timing-function: ease;
+          box-shadow: 0 0.5rem 1rem rgba(212, 149, 149, 0.15) !important;
+
+          .nav-link {
+            padding: 0.625rem 0.938rem;
+          }
+        }
+
+        &:hover > {
+          .nav-link {
+            color: $primary-color;
+          }
+
+          ul.sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transition-duration: 0.4s;
+            transition-timing-function: ease;
+
+            a.nav-link {
+              padding: 0.625rem 0.938rem;
+            }
+          }
+        }
+
+        &.active {
+          .nav-link {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 61.938rem) {
+      .navbar-nav {
+        li.nav-item {
+          ul.sub-menu {
+            width: 100%;
+            height: fit-content;
+            max-width: 100%;
+          }
+
+          &:hover {
+            ul.sub-menu {
+              position: unset !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 61.938rem) {
+      position: unset;
+      height: auto;
+    }
+  }
+
+  .navbar1 {
+    position: absolute;
+    top: calc(100vh - 3.5rem);
+    width: 100%;
+    z-index: 99;
+
+    .navbar-nav {
+      li.nav-item {
+        ul.sub-menu {
+          top: unset;
+          bottom: 100%;
+        }
+
+        &:hover {
+          box-shadow: 0 0.5rem 1rem rgba(212, 149, 149, 0.15),
+            0 0.5rem 1rem rgba(212, 149, 149, 0.15) !important;
+        }
+      }
+    }
+
+    @media (max-width: 61.938rem) {
+      top: unset;
+    }
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: $primary-color-lighter;
+
+    .navbar-nav {
+      li.nav-item {
+        ul.sub-menu {
+          bottom: unset;
+        }
+
+        &:hover {
+          box-shadow: unset !important;
+        }
+      }
+    }
+  }
+}
+
+.custom-navbar {
+  background-color: $primary-color-lighter;
+}

@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Instafin</title>
+</head>
+
+<body>
+    <div class=" h-100 w-100">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <figure class="m-0 p-0">
+                                <img src="assets/web-asset/images/logo.svg" alt="logo" />
+                            </figure>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>Mutual Funds</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>Buy Online</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>My Investment</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-search"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-bell"></span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-cart-plus"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-person-circle"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="h-100 w-100">
+            <section class="mf-filter-detail">
+                <div class="breadcrumb breadcrumb-style-2">
+                    <div class="container">
+                        <ul clas s="d-flex">
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Mutual</a></li>
+                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Realised Capital Gain</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Select View By</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Select Member</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Please Select Member</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Asset Type</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Equity</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 d-flex flex-wrap">
+                            <div class=" d-flex">
+                                <div class="form-check me-3 ">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio">
+                                    <label class="form-check-label" for="flexRadio">
+                                        Fin. Year
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexRadioChecked">
+                                        Between Date
+                                    </label>
+                                </div>
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Select Year</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-12 d-flex flex-wrap">
+                            <div class=" d-flex">
+                                <div class="form-check me-3 ">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio">
+                                    <label class="form-check-label" for="flexRadio">
+                                        Selected Funds
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="btn-wrapper">
+                                <button class="custom-btn-1">Show</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="member-detail-wrapper">
+                <div class="container">
+                    <div class="row m-0 p-0">
+                        <div class="card shadow">
+                            <div class="row p-0 m-0">
+                                <div class="col-md-2 col-sm-12 ">
+                                    <div class="client-detail-wrapper">
+                                        <div class="border-right">
+                                            <label for="cname" class="client-title-label">Client Name</label>
+                                            <p class="cname" id="cname"><strong>Putul Kumar</strong></p>
+                                            <p class="pan-details">[PAN : BDAPK9533N]</p>
+                                            <p class="fund-title">Realised Funds XIRR</p>
+                                            <p class="fund-year">2022-2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="address-wrapper">
+                                        <div class="border-right">
+                                            <label class="address-title" for="">Address :</label>
+                                            <p class="address"> C/O PRAVINBHAI PARMAR, AKSHAR PAVILION, B1 ROAD 4, VASNA
+                                                BHAYLI, MAIN ROAD
+                                                YOGI NAGAR, GOKUL NAGAR, BHAYLI - 391 410.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-12  ">
+                                    <div class="contact-wrapper h-100 ">
+                                        <div class="border-right h-100">
+                                            <div class="contact-title">Contact No. :</div>
+                                            <div class="contact-number">
+                                                <span class="bi bi-phone text-primary me-1"></span><span>+91 99992
+                                                    86005</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="current-sensex-wrapper h-100">
+                                        <div class="border-right h-100">
+                                            <div class="current-title">Current Sensex :</div>
+                                            <div class="d-flex">
+                                                <div><span class="loss-wrapper">59,501.39<span
+                                                            class="bi bi-arrow-down fw-bold loss-icon"></span></div>
+                                                <div><span class="profit-wrapper">-703.67 (-1.17%)<span
+                                                            class="bi bi-arrow-up fw-bold profit-icon"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="export-wrapper">
+                                        <div class="export-title">
+                                            Export In :
+                                        </div>
+                                        <ul
+                                            class="nav social-network-wrapper d-flex justify-content-start align-items-center">
+                                            <li class="social-item nav-item"><a href="#"
+                                                    class="social-link nav-link"><span class="bi bi-printer"></span></a>
+                                            </li>
+                                            <li class="social-item nav-item"><a href="#"
+                                                    class="social-link nav-link"><span
+                                                        class="bi bi-file-earmark-pdf"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <h5 class="text-center mt-3">REALISED FUNDS XIRR</h5>
+                        <div class="accordian-wrapper">
+                            <div class="row mb-3">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-3">Purchase</div>
+                                <div class="col-md-3">Redemption</div>
+                                <div class="col-md-3">Actual Gain Loss</div>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="collapse"
+                                            >
+                                            <div class="row w-100">
+                                                <div class="col-md-3">Equity</div>
+                                                <div class="col-md-3">11,499.47</div>
+                                                <div class="col-md-3">12,044.51</div>
+                                                <div class="col-md-3">545.04</div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <!-- <div class="accordion-body p-0">
+                                            <div class="table-responsive">
+                                                <table class="table tablestyel-4">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center border" colspan="6">Subcriptions</th>
+                                                            <th class="text-center border" colspan="6">Redemptions</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Trxn Type</th>
+                                                            <th scope="col">Pur. Amt</th>
+                                                            <th scope="col">Unit</th>
+                                                            <th scope="col">Pur. NAV</th>
+                                                            <th scope="col">Trxn Type</th>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Sell Amt</th>
+                                                            <th scope="col">Sell NAV</th>
+                                                            <th scope="col">Div Rein</th>
+                                                            <th scope="col">Div Paid</th>
+                                                            <th scope="col">Gain/Loss</th>
+                                                            <th scope="col">Abs. Rtn(%)</th>
+                                                            <th scope="col">XIRR(%)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="100">DSP Natural Resources and New Energy Fund
+                                                                - Regular Plan(5511256/76) (ISIN: INF740K01060)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>25-02-2022</td>
+                                                            <td>SIP Purchase</td>
+                                                            <td>999.96</td>
+                                                            <td>19.1680</td>
+                                                            <td>52.1680</td>
+                                                            <td>Redemption</td>
+                                                            <td>16-01-2023</td>
+                                                            <td>1,124.72</td>
+                                                            <td>58.6770</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>124.76</td>
+                                                            <td>12.48%</td>
+                                                            <td>14.12%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>25-02-2022</td>
+                                                            <td>SIP Purchase</td>
+                                                            <td>999.96</td>
+                                                            <td>19.1680</td>
+                                                            <td>52.1680</td>
+                                                            <td>Redemption</td>
+                                                            <td>16-01-2023</td>
+                                                            <td>1,124.72</td>
+                                                            <td>58.6770</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>124.76</td>
+                                                            <td>12.48%</td>
+                                                            <td>14.12%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>25-02-2022</td>
+                                                            <td>SIP Purchase</td>
+                                                            <td>999.96</td>
+                                                            <td>19.1680</td>
+                                                            <td>52.1680</td>
+                                                            <td>Redemption</td>
+                                                            <td>16-01-2023</td>
+                                                            <td>1,124.72</td>
+                                                            <td>58.6770</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>124.76</td>
+                                                            <td>12.48%</td>
+                                                            <td>14.12%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>25-02-2022</td>
+                                                            <td>SIP Purchase</td>
+                                                            <td>999.96</td>
+                                                            <td>19.1680</td>
+                                                            <td>52.1680</td>
+                                                            <td>Redemption</td>
+                                                            <td>16-01-2023</td>
+                                                            <td>1,124.72</td>
+                                                            <td>58.6770</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>124.76</td>
+                                                            <td>12.48%</td>
+                                                            <td>14.12%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>25-02-2022</td>
+                                                            <td>SIP Purchase</td>
+                                                            <td>999.96</td>
+                                                            <td>19.1680</td>
+                                                            <td>52.1680</td>
+                                                            <td>Redemption</td>
+                                                            <td>16-01-2023</td>
+                                                            <td>1,124.72</td>
+                                                            <td>58.6770</td>
+                                                            <td>0.00</td>
+                                                            <td>0.00</td>
+                                                            <td>124.76</td>
+                                                            <td>12.48%</td>
+                                                            <td>14.12%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by
+                                            default, until the collapse plugin adds the appropriate classes that we use
+                                            to style each element. These classes control the overall appearance, as well
+                                            as the showing and hiding via CSS transitions. You can modify any of this
+                                            with custom CSS or overriding our default variables. It's also worth noting
+                                            that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Modal -->
+            <div class="modal fade mf-detail-modal" id="staticBackdrop" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Realised Funds Detail</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body w-100">
+                            <div class="table-responsive">
+                                <table class="table tablestyel-4">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" colspan="6" style="min-width:unset">
+                                                Subcriptions</th>
+                                            <th class="text-center" colspan="6" style="min-width:unset">
+                                                Redemptions</th>
+                                            <!-- <th class="text-center border" colspan="2"></th>                                                 -->
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Trxn Type</th>
+                                            <th scope="col">Pur. Amt</th>
+                                            <th scope="col">Unit</th>
+                                            <th scope="col">Pur. NAV</th>
+                                            <th scope="col">Trxn Type</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Sell Amt</th>
+                                            <th scope="col">Sell NAV</th>
+                                            <th scope="col">Div Rein</th>
+                                            <th scope="col">Div Paid</th>
+                                            <th scope="col">Gain/Loss</th>
+                                            <th scope="col">Abs. Rtn(%)</th>
+                                            <th scope="col">XIRR(%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody-scroll">
+                                        <tr>
+                                            <td colspan="100" class="text-start">DSP Natural Resources and New Energy Fund
+                                                - Regular Plan(5511256/76) (ISIN: INF740K01060)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25-02-2022</td>
+                                            <td>SIP Purchase</td>
+                                            <td>999.96</td>
+                                            <td>19.1680</td>
+                                            <td>52.1680</td>
+                                            <td>Redemption</td>
+                                            <td>16-01-2023</td>
+                                            <td>1,124.72</td>
+                                            <td>58.6770</td>
+                                            <td>0.00</td>
+                                            <td>0.00</td>
+                                            <td>124.76</td>
+                                            <td>12.48%</td>
+                                            <td>14.12%</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td scope="col">Total</td>
+                                            <td scope="col"></td>
+                                            <td scope="col">9,999.51</td>
+                                            <td scope="col">190.6840</td>
+                                            <td scope="col"></td>
+                                            <td scope="col"></td>
+                                            <td scope="col"></td>
+                                            <td scope="col">11,188.76</td>
+                                            <td scope="col"></td>
+                                            <td scope="col">0.00</td>
+                                            <td scope="col">0.00</td>
+                                            <td scope="col">1,189.26</td>
+                                            <td scope="col">11.89%</td>
+                                            <td scope="col">31.35%</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

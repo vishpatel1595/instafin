@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Instafin</title>
+</head>
+
+<body>
+    <div class=" h-100 w-100">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <figure class="m-0 p-0">
+                                <img src="assets/web-asset/images/logo.svg" alt="logo" />
+                            </figure>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>Mutual Funds</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>Buy Online</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span>My Investment</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-search"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-bell"></span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-cart-plus"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><span class="bi bi-person-circle"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="h-100 w-100">
+            <section class="mt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Select View By</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Select Member</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Please Select Member</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Asset Type</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Equity</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 d-flex flex-wrap">
+                            <div class=" d-flex">
+                                <div class="form-check me-3 ">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio">
+                                    <label class="form-check-label" for="flexRadio">
+                                        Fin. Year
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexRadioChecked">
+                                        Between Date
+                                    </label>
+                                </div>
+                            </div>
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Select Year</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-12 d-flex flex-wrap">
+                            <div class=" d-flex">
+                                <div class="form-check me-3 ">
+                                    <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio">
+                                    <label class="form-check-label" for="flexRadio">
+                                        Selected Funds
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="btn-wrapper">
+                                <button class="custom-btn-1">Show</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="member-detail-wrapper">
+                <div class="container">
+                    <div class="row m-0 p-0">
+                        <div class="card shadow">
+                            <div class="row p-0 m-0">
+                                <div class="col-md-2 col-sm-12 ">
+                                    <div class="client-detail-wrapper">
+                                        <div class="border-right">
+                                            <label for="cname" class="client-title-label">Client Name</label>
+                                            <p class="cname" id="cname"><strong>Putul Kumar</strong></p>
+                                            <p class="pan-details">[PAN : BDAPK9533N]</p>
+                                            <p class="fund-title">Realised Funds XIRR</p>
+                                            <p class="fund-year">2022-2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="address-wrapper">
+                                        <div class="border-right">
+                                            <label class="address-title" for="">Address :</label>
+                                            <p class="address"> C/O PRAVINBHAI PARMAR, AKSHAR PAVILION, B1 ROAD 4, VASNA
+                                                BHAYLI, MAIN ROAD
+                                                YOGI NAGAR, GOKUL NAGAR, BHAYLI - 391 410.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-12  ">
+                                    <div class="contact-wrapper h-100 ">
+                                        <div class="border-right h-100">
+                                            <div class="contact-title">Contact No. :</div>
+                                            <div class="contact-number">
+                                                <span class="bi bi-phone text-primary me-1"></span><span>+91 99992
+                                                    86005</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="current-sensex-wrapper h-100">
+                                        <div class="border-right h-100">
+                                            <div class="current-title">Current Sensex :</div>
+                                            <div class="d-flex">
+                                                <div>
+                                                    <span class="loss-wrapper">59,501.39<span
+                                                            class="bi bi-arrow-down fw-bold loss-icon"></span>
+                                                </div>
+                                                <div>
+                                                    <span class="profit-wrapper">-703.67 (-1.17%)<span
+                                                            class="bi bi-arrow-up fw-bold profit-icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-12">
+                                    <div class="export-wrapper">
+                                        <div class="export-title">
+                                            Export In :
+                                        </div>
+                                        <ul
+                                            class="nav social-network-wrapper d-flex justify-content-start align-items-center">
+                                            <li class="social-item nav-item"><a href="#"
+                                                    class="social-link nav-link"><span class="bi bi-printer"></span></a>
+                                            </li>
+                                            <li class="social-item nav-item"><a href="#"
+                                                    class="social-link nav-link"><span
+                                                        class="bi bi-file-earmark-pdf"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <h5 class="text-center mt-3">REALISED FUNDS XIRR</h5>
+                        <div class="accordian-wrapper accordianstyle3">
+                            <div class="row mb-3">
+                                <div class="col-md-2">Sr no</div>
+                                <div class="col-md-2">Folio Number</div>
+                                <div class="col-md-5">Scheme Name</div>
+                                <div class="col-md-2">ARN No.</div>
+                                <div class="col-md-1">Action</div>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button a" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="collapse">
+                                            <div class="row w-100">
+                                                <div class="col-md-2">1.</div>
+                                                <div class="col-md-2">20731617/94</div>
+                                                <div class="col-md-5">HDFC Balanced Advantage Fund - Regular Plan ></div>
+                                                <div class="col-md-2">ARN-147231</div>
+                                                <div class="col-md-1 d-flex justify-content-center"><a class="" href="#"> <span class="bi bi-upload"></span></a></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button a" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="collapse">
+                                            <div class="row w-100">
+                                                <div class="col-md-2">2.</div>
+                                                <div class="col-md-2">20731617/94</div>
+                                                <div class="col-md-5">HDFC Balanced Advantage Fund - Regular Plan ></div>
+                                                <div class="col-md-2">ARN-147231</div>
+                                                <div class="col-md-1 d-flex justify-content-center"><a class="" href="#"> <span class="bi bi-upload"></span></a></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button a" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="collapse">
+                                            <div class="row w-100">
+                                                <div class="col-md-2">3.</div>
+                                                <div class="col-md-2">20731618/91</div>
+                                                <div class="col-md-5">IDB Balanced Advantage Fund - Regular Plan ></div>
+                                                <div class="col-md-2">ARN-473423</div>
+                                                <div class="col-md-1 d-flex justify-content-center"><a class="" href="#"> <span class="bi bi-upload"></span></a></div>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal -->
+            <div class="modal fade mf-detail-modal" id="staticBackdrop" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">REALISED FUNDS XIRR DETAILS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body w-100">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6 class="w-100 d-flex align-items-center m-0 mt-2 mb-2 primary-color"><strong>Folio Master Detail</strong></h6>
+                                </div>
+                                <div class="col-md-6 col-12 d-flex flex-wrap">
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Scheme Name :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14 ">HDFC Balanced Advantage Fund - Regular Plan</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Sole Holder Name :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">Putul Kumar</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Mode of Holding :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">Single</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">First Joint Holder Name :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Second Joint Holder Name :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Guardian Name :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Nominee Name1 :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">RANJITA RAI</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Nominee Name2 :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">N/A</div> 
+                                </div>
+                                <div class="col-md-6 col-12 d-flex flex-wrap">
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Folio No. :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">20731617/94</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Sole Holder PAN No. :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">BDAPK9533N</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">DOB :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">29/12/1984</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">First Joint Holder Name :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Second Joint Holder Name :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Guardian PAN No. :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Relation :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">Wife</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Nominee Name 3 :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14 ">N/A</div> 
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h6 class="w-100 d-flex align-items-center m-0 mt-2 mb-2 primary-color"><strong>Contact Details</strong></h6>
+                                    </div>
+                                <div class="col-md-6 col-12 d-flex flex-wrap">
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Address :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14 ">C/O PRAVINBHAI PARMAR AKSHAR PAVILION B11 403,
+                                        ROAD 4 VASNA BHAYLI MAIN ROAD YOGI NAGAR
+                                        TOWNSHIP , GOKUL NAGAR,</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Pincode :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">391410</div>
+                                    <div class="col-md-5 col-sm-12 fw-semibold pt-1 pb-1 font-14">Phone :</div>
+                                    <div class="col-md-7 col-sm-12 pt-1 pb-1 font-14">N/A</div>
+                                </div>
+                                <div class="col-md-6 col-12 d-flex flex-wrap">
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">City :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">BHAYLI</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Mobile Number :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">9999286005</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">E-mail :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">bullseye.bsct@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6 class="w-100 d-flex align-items-center m-0 mt-2 mb-2 primary-color"><strong>Bank Details</strong></h6>
+                                </div>
+                                <div class="col-md-6 d-flex flex-wrap">
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">First Holder's Bank Name :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">ICICI BANK LIMITED</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Aadhar Number :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">N/A</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Bank City :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">DELHI</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">MICR No. :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">110229166</div>
+                                </div>
+                                <div class="col-md-6 d-flex flex-wrap">
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Account Number :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">11480150386000</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">Branch :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">DELHI KAILASH COLONY</div>
+                                    <div class="col-md-5 col-12 pt-1 pb-1 fw-semibold font-14">IFSC Code :</div>
+                                    <div class="col-md-7 col-12 pt-1 pb-1 font-14">ICIC0006627</div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

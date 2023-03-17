@@ -1,0 +1,402 @@
+.dashboard-wrapper {
+    height: 100%;
+    width: 100%;
+    .top-bar {
+        margin-top: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .admin-title-wrapper {
+            display: flex;
+            flex: 2;
+            border: 0.06rem solid $primary-color;
+            background-image: url("../images/dashboard-coin.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+            padding:0.313rem 1rem;
+            margin: 0.625rem;
+            border-radius: $border-radius-16;
+
+            @media (max-width:991px) {
+                flex: unset;
+                width: 100%;
+            }
+
+            p {
+                font-size: 1.25rem;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+                display: block;
+                margin: 0;
+            }
+
+            h3 {
+                display: block;
+                font-size: 2.25rem;
+                line-height: 2.875rem;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .aum-wrapper {
+            flex: 1;
+            background: $lineargradient-2;
+            border-radius: $border-radius;
+            margin: 0.6rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.6rem;
+            @media (max-width:991px) {
+                flex: unset;
+                width: 100%;
+            }
+
+            p {
+                padding: 0 0.9rem;
+                font-size:$font-size-small;
+                line-height: 1.75;
+                border-radius: 0.938rem;
+                font-weight: $font-weight-bold;
+                color: $color-white;
+                background-color: $primary-color;
+            }
+
+            .amu-amount {
+                font-size: 2.25rem;
+                line-height: 1.75rem;
+                font-weight: $font-weight-bold;
+                color: $primary-color;
+
+                .amu-amount-in {
+                    font-size: 1.5rem;
+                    font-weight: $font-weight-regular;
+                    line-height: 1.75rem;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+            }
+
+            .amu-rate {
+                color:$global-font-color;
+            }
+
+            .amu-btn {
+                background-color: $secondary-color;
+                color: $color-white;
+                font-size: $font-size-small;
+                font-weight:$font-weight-bold;
+                letter-spacing: 0;
+                text-align: center;
+                border-radius: $border-radius-16;
+                text-align: right;
+                padding: 0 0.625rem;
+            }
+        }
+
+        .sip-wrapper {
+            flex: 1;
+             background:$lineargradient-3;
+            border-radius: $border-radius;
+            margin: 0.625rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.625rem;
+            @media (max-width:991px) {
+                flex: unset;
+                width: 100%;
+            }
+        }
+
+        .report-btn {
+            background-color: $secondary-color;
+            color: $color-white;
+            font-size: $font-size-small;
+            font-weight: $font-weight-bold;
+            letter-spacing: 0;
+            text-align: center;
+            border-radius: $border-radius;
+            text-align: right;
+            padding: 0 0.625rem;
+        }
+    }
+
+    .line-divider {
+        width: 100%;
+        border: 0.063rem solid $divider-border;
+        margin: 2.188rem 0;
+    }
+
+    .graph-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .barchart-data {
+            flex: 1;
+            padding: 0.625rem 0.938rem;
+            position: relative;
+            border-radius: 1.313rem;
+            background: $color-bg;
+
+            .graph-title-wrapper {
+                position: absolute;
+                top: -1rem;
+                left: 1.063rem;
+                background: $primary-color;
+                z-index: 1;
+                border-radius: 0 0 0.625rem 0.625rem;
+
+                &::after {
+                    position: absolute;
+                    right: 0;
+                    transform: rotate(-125.1deg);
+                }
+
+                .graph-title {
+                    padding: 0.25rem 1rem;
+                    margin: 0;
+                    color: $color-white;
+                    font-size: $font-size-normal;
+                    font-weight: $font-weight-bold;
+                    line-height: $font-line-height-body;
+                    letter-spacing: 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .category-distribution {
+            background-color: $color-bg;
+            border-radius: 1.313rem;
+        }
+
+        .market-cap-distribution {
+            background-color: $color-bg;
+            border-radius: 1.313rem;
+        }
+
+        .top-gainer-wrapper {
+            border: 0.063rem dashed $color-purple;
+            border-radius: $border-radius;
+
+            table {
+                border: none;
+                margin: 0;
+
+                tr {
+                    box-shadow: none;
+                    border: none;
+
+                    &:nth-child(odd) {
+                        background-color: rgba(239, 239, 239, 1);
+                    }
+
+                    &:nth-child(even) {
+                        background-color: $table-td-odd;
+                    }
+                }
+
+                tbody {
+                    border: 0;
+                }
+
+                th {
+                    background-color: $color-red-dark;
+                    color: $color-white;
+                    padding: 0.625rem;
+                    border: none;
+                    box-shadow: none;
+                    border-bottom: none;
+                    border-right: 0.063rem solid rgba(202, 202, 202, 1);
+                    font-size: $font-size-normal;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+
+                td {
+                    font-size: $font-size-small;
+                    font-weight: $font-weight-regular;
+                    line-height:$font-line-height-body;
+                    color: $color-black;
+                    box-shadow: none;
+                    border: none;
+                    border-right:0.063rem solid rgba(202, 202, 202, 1);
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+        .card-fund-wrapper {
+            position: relative;
+            background: $color-bg;
+            border-radius: $border-radius-16;
+            padding: 1.5rem 1.875rem;
+            height: 100%;
+
+            .title {
+                position: absolute;
+                top: -1rem;
+                left: 1.063rem;
+                background: $color-red-dark;
+                z-index: 1;
+                width: auto;
+                padding: 0.25rem 1rem;
+                border-radius: 0 0 0.625rem 0.625rem;
+                p {
+                    color: $color-white;
+                    font-size: $font-size-normal;
+                    font-weight: $font-weight-bold;
+                    line-height: $font-line-height-body;
+                    letter-spacing: 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                }
+            }
+            .card-details {
+                margin-top: 1.25rem;
+                display: flex;
+                flex-wrap: wrap;
+                div {
+                    width: 50%;
+                }
+                .profit-loss {
+                    color: $profit-loss-color;
+                    font-size: $font-size-18;
+                    font-weight: $font-weight-medium;
+                    line-height: $font-line-height-body;
+                    letter-spacing: 0;
+                    text-align: left;
+                }
+                .status {
+                    font-family: $global-font-family;
+                    font-size: $font-size-normal ;
+                    font-weight: $font-weight-medium;
+                    line-height: 1.438rem;
+                    letter-spacing: 0;
+                    text-transform: capitalize;
+                    text-align: left;
+                    color: $profit-loss-color;
+                }
+                .profit-loss-no {
+                    font-style: normal;
+                    font-weight: $font-weight-medium;
+                    font-size: 2rem;
+                    line-height: 3.5rem;
+                    text-transform: uppercase;
+                    color: $input-checked-bg;
+
+                    @media (max-width:1366px) {
+                       font-size: 1.1rem; 
+                       line-height: 1;
+                    }
+                }
+                .status-detail {
+                    font-weight: $font-weight-semi-bold;
+                    font-size: $font-size-h5;
+                    line-height: 3.5rem;
+                    text-transform: uppercase;
+                    color: $input-checked-bg;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+                }
+                .invested {
+                    font-family: $global-font-family;
+                    font-style: normal;
+                    font-weight: $font-weight-medium;
+                    font-size: $font-size-normal;
+                    line-height: 1.438rem;
+                    text-transform: capitalize;
+                    color: $invested-color;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+
+                }
+                .invested-money {
+                    font-weight: $font-weight-medium;
+                    font-size: 1.875rem;
+                    line-height: 3.5rem;
+                    text-transform: capitalize;
+                    color: $invested-money-color;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+                }
+                .current {
+                    font-weight: $font-weight-medium;
+                    font-size: $font-size-normal;
+                    line-height: 1.438rem;
+                    text-transform: capitalize;
+                    color: $invested-color;
+                    display: block;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+                }
+                .current-value {
+                    font-weight: $font-weight-regular;
+                    font-size: $font-size-h5;
+                    line-height: 3.5rem;
+                    text-transform: capitalize;
+                    color: $invested-money-color;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+                }
+                .upcoming-sip {
+                    font-weight: $font-weight-medium;
+                    font-size: $font-size-normal;
+                    line-height:1.438rem;
+                    text-transform: capitalize;
+                    color: $invested-color;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+                }
+                .upcoming-sip-detail {
+                    font-weight: $font-weight-medium;
+                    font-size: $font-size-h5;
+                    line-height: 3.5rem;
+                    text-transform: capitalize;
+                    color: $error-alert;
+                    margin-bottom: 0;
+                    @media (max-width:1366px) {
+                        font-size: 1.1rem; 
+                        line-height: 1;
+                     }
+                }
+            }
+        }
+    }
+    .spacer {
+        margin-bottom: 3.125rem;
+    }
+}
+
+.section-dashboard-mf {
+    margin-top: 80px;
+
+    @media (max-width:768px) {
+        margin-top: 40px;
+        
+    }
+}

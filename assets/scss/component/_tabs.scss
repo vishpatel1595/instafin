@@ -1,0 +1,20 @@
+.tab-style-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.125rem;
+    border: none !important;
+    .nav-link {
+        // font-size: $font-size-small;
+        border: 0.063rem solid transparent !important;
+        &.active {
+            color: $color-smalt !important;
+            border: 0.063rem solid transparent;
+            border-bottom: 0.063rem solid $color-smalt !important;
+            background-color: transparent !important;
+        }
+        &:hover {
+            border: 0.063rem solid transparent !important;
+            border-bottom: 0.063rem solid $color-smalt !important;
+        }
+    }
+}

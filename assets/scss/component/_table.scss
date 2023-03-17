@@ -1,0 +1,463 @@
+table {
+    th {
+        white-space: nowrap;
+    }
+
+    td {
+        white-space: nowrap;
+    }
+}
+
+.table-content-wrapper {
+    .fund-name {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.instfintopfunds-section {
+    .table {
+        border-collapse: separate;
+        border-spacing: 0 0.313rem;
+
+        thead {
+            th {
+                color: $color-smalt;
+                font-weight: $font-weight-semi-bold;
+                font-size: $font-size-18;
+                line-height: 90%;
+                border: none;
+                padding: 1.25rem 0.625rem;
+            }
+        }
+
+        tbody {
+            tr {
+                background: $color-body-bg;
+                padding: 0.625rem;
+                border: none;
+                border-radius: 0.625rem;
+
+                td {
+                    border: 0.063rem solid $color-body-bg;
+                    border-right: none;
+                    border-left: none;
+                    font-size: $font-size-normal;
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    &:first-child {
+                        border-radius: 0.625rem 0 0 0.625rem;
+                        border: 0.063rem solid $color-body-bg;
+                        border-right: none;
+                    }
+
+                    &:last-child {
+                        border-radius: 0 0.625rem 0.625rem 0;
+                        border: 0.063rem solid $color-body-bg;
+                        border-left: none;
+                    }
+                }
+
+                &:hover {
+                    background: $color-white;
+                    border: none;
+                    td {
+                        border: 0.063rem solid $color-body-bg;
+                        border-right: none;
+                        border-left: none;
+                        // font-weight: $font-weight-bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.type-mf-assets-wrapper {
+    // height: 100%;
+    .nav {
+        .nav-link {
+            background: $color-body-bg;
+            border-radius: 0.625rem 0.625rem 0 0;
+            color: $color-black;
+            margin-right: 0.125rem;
+            line-height: 1.51;
+
+            &.active {
+                background: $primary-color;
+                color: $color-white;
+            }
+        }
+    }
+
+    .tab-content {
+        .table-responsive {
+            min-height: 19.5rem;
+            table {
+                thead {
+                    th {
+                        font-size: $font-size-normal;
+                        border-bottom: 0.063rem dashed $global-font-title;
+                        border-right: 0.063rem dashed $global-font-title;
+                        text-align: center;
+                        &:first-child {
+                            white-space: nowrap;
+                            text-align: left;
+                        }
+                        &:last-child {
+                            border-right: none;
+                        }
+                    }
+                }
+                tbody {
+                    td {
+                        font-size: $font-size-normal;
+                        border-bottom: 0.063rem dashed $global-font-title;
+                        border-right: 0.063rem dashed $global-font-title;
+                        text-align: center;
+                        &:last-child {
+                            border-right: none;
+                        }
+                        .table-content-wrapper {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            figure {
+                                margin: 0;
+                                padding: 0;
+
+                                .table-img {
+                                    width: 1.75rem;
+                                    height: 1.75rem;
+                                    margin-right: 0.625rem;
+                                    border-radius: 0.333rem;
+                                    border: 0.063rem solid;
+                                }
+                            }
+
+                            .fund-name {
+                                font-weight: $font-weight-regular;
+                                font-size: $font-size-small;
+                                line-height: 120%;
+                                color: $color-black;
+                                white-space: nowrap;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.inner-page-section-2 {
+    table {
+        thead {
+            th {
+                font-size: $font-size-normal;
+                text-align: center;
+            }
+        }
+
+        tbody {
+            td {
+                font-size: $font-size-normal;
+                text-align: flex-start;
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                .table-content-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    text-align: left;
+
+                    figure {
+                        margin: 0;
+                        padding: 0;
+
+                        .table-img {
+                            width: 1.75rem;
+                            height: 1.75rem;
+                            margin-right: 0.625rem;
+                            border-radius: 0.333rem;
+                        }
+                    }
+
+                    .fund-name {
+                        font-weight: $font-weight-regular;
+                        font-size: $font-size-small;
+                        line-height: 120%;
+                        color: $color-black;
+                        white-space: nowrap;
+                        padding: 0;
+                        margin: 0;
+                        text-align: flex-start;
+                    }
+                }
+
+                span {
+                    font-size: $font-size-small;
+                }
+            }
+        }
+    }
+
+    .terms-table {
+        thead {
+            background-color: $color-light-pink;
+
+            th {
+                text-align: flex-start;
+
+                .tabletheadtitle {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    vertical-align: middle;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.find-fund-table-wrapper {
+    table {
+        tr {
+            th {
+                white-space: unset;
+                font-size: $font-size-small;
+            }
+            td {
+                white-space: unset;
+                font-size: $font-size-small;
+            }
+        }
+    }
+}
+.terms-table {
+    thead {
+        background-color: $color-light-pink;
+
+        th {
+            text-align: left;
+            .tabletheadtitle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                vertical-align: middle;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.calculator-tab-wrapper {
+    .tab-content {
+        .oddeventable-color {
+            tr:nth-child(odd) {
+                background-color: $color-body-bg !important;
+
+                td {
+                    border: 0;
+                }
+            }
+
+            tr:nth-child(even) {
+                background-color: $color-grey-85 !important;
+
+                td {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+.table-card {
+    box-shadow: $box-shadow-1;
+    border: 0.063rem solid;
+    padding: 0.938rem !important;
+    background-color: $color-light-white-bg !important;
+    z-index: 99;
+    min-height: calc(100% - 25vh);
+
+    .form-control {
+        padding: 0.125rem 0.625rem;
+
+        &:focus {
+            box-shadow: $box-shadow-1;
+        }
+    }
+    .table {
+        border: none;
+        thead {
+            background: transparent;
+            tr {
+                border-bottom: 0.063rem solid $color-grey-light;
+                cursor: pointer;
+                th {
+                    padding: 0.50rem 0.25rem;
+                    vertical-align: top;
+                    border-top: 0.063rem solid $color-grey-light;
+                    white-space: nowrap;
+                    text-transform: capitalize;
+                    text-align: start;
+                    width: max-content;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    border: none;
+                    padding: 0.25rem 0.25rem;
+                    vertical-align: top;
+                    border-top: 0.063rem solid $color-grey-light;
+                    white-space: nowrap;
+                    text-align: start;
+                    width: max-content;
+                }
+            }
+        }
+    }
+    .table-user {
+        img {
+            height: 2.813rem;
+            width: 2.813rem;
+            border-radius: 50%;
+        }
+    }
+    .table-icon {
+        span {
+            padding: 0.625rem;
+            background-color: $color-cyan;
+            border-radius: 50%;
+            margin-right: 0.938rem;
+            color: $color-white;
+        }
+    }
+}
+.wishlist-table {
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            border: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 5px;
+
+            div {
+                border: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wishlist-table-img {
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+
+                    img {
+                        width: 40px;
+                    }
+                }
+
+                .wishlist-fund-title {
+                    color: $primary-color;
+                    margin-bottom: 0;
+                }
+                .wishlist-fund-type-wrapper {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    .wishlist-fund-type-list-item {
+                        padding: 10px 20px 0 0;
+                        margin: 0;
+                        font-size: $font-size-small;
+                        color: $global-font-color;
+                    }
+                }
+                &.watchlist-header {
+                    padding-left: 40px;
+                }
+                .title-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                @media (max-width:1199px) {
+                    padding: 5px;
+                    justify-content: center;
+                }
+
+                @media (max-width:768px) {
+                    &.wishlist-md {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .col-sm-2 {
+            flex: 0 0 auto;
+            width: 16.66666667% !important;
+        }
+        .col-sm-8 {
+            flex: 0 0 auto;
+            width: 66.66666667% !important;
+        }
+    }
+}
+
+.table-redumption{
+    overflow-y: auto;
+    max-height: 300px;
+    height: 300px;
+    tbody {
+        td {
+            font-size: $font-size-normal;
+            line-height: 1;
+            vertical-align: middle;
+        }
+    }
+}
+
+.preprintsliptable{ 
+    padding: 10px;
+    thead {
+        th{
+            font-size: $font-size-normal;
+        }
+    }
+    tbody {
+        td {
+            vertical-align: middle;
+            border-bottom: 1px solid;
+            border-color: inherit;
+            font-size: $font-size-normal;
+
+            button {
+                padding: 10px 20px !important;
+            }
+        }
+    }
+}

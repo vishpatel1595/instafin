@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/scss/style.css">
+  
+  <!-- swiper slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <title>Instafin</title>
+</head>
+<body>
+  <header class="header">
+    <nav id="Navbar1" class="navbar navbar1 navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <figure class="mb-0">
+            <svg class="brand-logo" width="140" height="70" viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0149 13.5454H46.8806V5.63109L60.2273 5.34377C60.2273 5.34377 71.9832 5.0992 80.7266 0C80.7266 0 88.2572 4.93586 103.191 5.46605L114.53 5.62938V28.3915C114.53 28.3915 114.112 42.5859 102.231 55.6405C90.3497 68.6942 80.7275 70 80.7275 70C80.7275 70 63.9939 65.5122 53.4509 47.8083H61.8602C61.8602 47.8083 62.7907 47.7262 62.7907 46.6667C62.7907 45.6054 62.7907 45.0248 62.7907 45.0248C62.7907 45.0248 62.8328 44.2287 62.0593 44.2287C61.2849 44.2287 34.0399 44.2287 34.0399 44.2287C34.0399 44.2287 32.6279 44.0645 32.6814 42.4637C32.7332 40.8628 34.438 40.8936 34.438 40.8936H64.6753C64.6753 40.8936 65.5532 40.903 65.5532 39.8632C65.5532 38.8225 65.5532 38.4967 65.5532 38.4967C65.5532 38.4967 65.5953 37.5372 64.7165 37.5372C63.8378 37.5372 12.161 37.5372 12.161 37.5372C12.161 37.5372 10.5614 37.2824 10.5614 35.8338C10.5614 34.386 11.8164 34.0397 12.1821 34.0183H56.0573C56.0573 34.0183 57.1342 34.2116 57.2289 33.1101V31.5606C57.2289 31.5606 57.1237 30.6114 56.1406 30.6114C55.1584 30.6114 21.3447 30.6114 21.3447 30.6114C21.3447 30.6114 20.0898 30.2848 20.0898 29.2851V28.4086C20.0898 28.4086 20.2783 27.3679 21.3027 27.2866C22.3278 27.2045 53.265 27.2866 53.265 27.2866C53.265 27.2866 54.3322 27.2447 54.3322 25.9997V24.8273C54.3322 24.8273 54.3007 23.8079 53.4123 23.8079C52.523 23.8079 27.9238 23.8079 27.9238 23.8079C27.9238 23.8079 26.4602 23.7053 26.4602 22.0942C26.4602 20.4823 27.9554 20.3292 27.9554 20.3292H57.4288C57.4288 20.3292 58.1813 20.2882 58.1813 19.1662C58.1813 18.0452 58.1813 17.9229 58.1813 17.9229C58.1813 17.9229 58.1611 17.0044 57.3245 17.0044C56.487 17.0044 18.0412 17.0044 18.0412 17.0044C18.0412 17.0044 16.4302 16.8206 16.5144 15.1881C16.5977 13.5574 18.0149 13.5454 18.0149 13.5454ZM95.2423 32.5517C95.188 32.45 95.2169 21.6419 95.2169 19.5596C95.2169 19.3672 95.1924 18.8558 95.2274 18.7002C95.3818 18.6677 96.9481 18.6771 97.0138 18.7156C97.4269 18.707 97.811 19.0132 97.9803 19.1979C98.189 19.4253 98.4153 19.7854 98.4126 20.2206C98.4591 20.2967 98.431 22.137 98.431 22.214C98.8362 22.214 99.8509 22.196 100.242 22.2122L100.33 22.2328C100.364 22.8998 100.342 23.5155 99.9666 23.9157C99.3843 24.5374 98.9704 24.392 98.4188 24.4587V30.3728C98.4188 31.1707 98.2337 31.9463 99.1124 32.0643C99.4475 32.1096 99.9658 32.0797 100.319 32.0797C100.353 32.2003 100.332 34.1474 100.332 34.4442C99.1984 34.5254 98.0548 34.5434 96.9209 34.4151C96.3763 34.3527 95.9764 34.15 95.7054 33.8618C95.4783 33.6224 95.216 33.0169 95.2423 32.5517ZM82.6323 30.5225C82.8542 30.4968 85.8087 30.5045 85.8999 30.5302C85.9332 32.0592 87.4031 32.4286 88.9553 32.3217C89.6744 32.273 90.3479 32.0669 90.5014 31.458C90.6794 30.7491 90.0024 30.4139 89.4192 30.195C88.1836 29.7315 86.7462 29.6708 85.5412 29.2064C84.3696 28.7541 83.4049 28.0443 83.091 26.8035C82.9199 26.1262 82.9866 25.348 83.1918 24.7118C83.4751 23.8336 84.1021 23.1922 84.8712 22.7664C86.7822 21.7077 90.0647 21.836 91.7485 22.9631C92.215 23.2752 92.6202 23.6933 92.9175 24.2193C93.1683 24.6648 93.4638 25.5028 93.4323 26.1066C92.8684 26.1066 91.3126 26.1536 90.8601 26.0339C90.4979 25.9381 90.2287 25.7474 90.0848 25.496C89.9252 25.2129 89.9095 25.006 89.4815 24.7708C88.8097 24.4014 86.8304 24.309 86.341 25.047C86.1078 25.3993 86.2753 25.7987 86.484 26.0185C86.8549 26.411 87.7749 26.6786 88.3344 26.8001C89.0886 26.9634 89.7788 27.0951 90.497 27.2995C91.1679 27.491 91.8283 27.7356 92.3808 28.0494C93.7164 28.8071 94.0593 30.26 93.7357 31.706C93.2551 33.8533 91.1951 34.6477 88.8895 34.7922C87.2548 34.894 85.6088 34.7272 84.4275 33.9815C83.8829 33.6378 83.4461 33.2042 83.1217 32.6458C82.7665 32.0327 82.6577 31.3118 82.6323 30.5225ZM104.915 25.4532H101.764C102.11 23.1332 103.932 22.0395 106.546 22.0395C108.316 22.0395 110.641 22.2396 111.589 23.7806C111.855 24.2116 112.064 24.8008 112.064 25.4122V29.8221C112.064 31.3545 111.516 32.7099 110.361 33.607C109.371 34.3757 107.647 34.8418 106.046 34.8418C105.257 34.8418 104.706 34.8008 103.947 34.5605C103.475 34.41 102.912 34.1047 102.633 33.8498C102.265 33.5163 102.022 33.2726 101.75 32.7151C101.053 31.2861 101.336 29.1201 102.588 28.1666C102.81 27.9964 102.9 27.916 103.165 27.7758C105.301 26.6453 107.578 27.1746 108.624 26.293C109.022 25.9578 109.033 25.3669 108.557 24.9769C107.97 24.4946 105.401 24.286 104.988 25.3557C104.954 25.4438 104.98 25.4267 104.915 25.4532ZM74.0256 26.4409L74.0116 27.4474C74.0116 28.1435 74.037 34.3963 74.0028 34.5793C73.8827 34.6443 71.4964 34.5998 70.9501 34.6049C70.6887 34.6075 70.7791 34.5981 70.7545 34.5656C70.7808 34.3013 70.7598 30.4943 70.7598 30.1189C70.7598 28.9832 70.6993 26.8137 70.8904 25.8004C71.3754 23.241 73.2162 22.0378 76.1681 22.0395C79.1446 22.0429 80.9757 23.1922 81.444 25.8004C81.5729 26.5162 81.5615 27.1721 81.5615 27.9135V34.5827C79.9452 34.5827 78.3535 34.8332 78.3483 33.0024C78.3439 31.4332 78.3483 29.864 78.3483 28.2949C78.3483 26.9283 78.6245 25.3096 77.0179 24.8811C76.3908 24.7135 75.5069 24.7349 74.9438 25.0017C74.6439 25.1437 74.4615 25.3002 74.3028 25.5439C74.1774 25.738 73.9958 26.1579 74.0256 26.4409ZM67.2615 18.7156C67.3334 18.6754 68.9523 18.6668 69.1233 18.7002L69.1128 34.5827C68.955 34.6152 66.4521 34.5853 65.9478 34.593C65.7373 34.5955 65.7935 34.5887 65.7794 34.5553V21.5948C65.7794 20.6585 65.6119 19.4732 66.4038 18.9636C66.6152 18.8285 66.9563 18.701 67.2615 18.7156ZM108.965 28.3838C108.75 28.4377 108.44 28.5796 108.201 28.6574C107.932 28.7455 107.666 28.8285 107.384 28.9011C106.433 29.144 104.979 29.2423 104.61 30.3087C104.416 30.8757 104.608 31.5683 104.923 31.8924C105.567 32.5586 107.381 32.3277 108.1 31.6547C108.295 31.4717 108.405 31.3648 108.573 31.098C108.707 30.8868 108.812 30.6285 108.876 30.3549C108.99 29.8606 109.007 28.9208 108.965 28.3838ZM26.1392 44.3356H27.7967C28.7701 44.3356 29.5673 45.112 29.5673 46.0612V46.0621C29.5673 47.0113 28.7701 47.7886 27.7967 47.7886H26.1392C25.1649 47.7886 24.3686 47.0113 24.3686 46.0621V46.0612C24.3686 45.112 25.1649 44.3356 26.1392 44.3356ZM1.76974 34.3005H7.54814C8.52159 34.3005 9.31876 35.077 9.31876 36.0262C9.31876 36.9762 8.52159 37.7527 7.54814 37.7527H1.76974C0.796295 37.7527 0 36.9762 0 36.0262C0 35.077 0.796295 34.3005 1.76974 34.3005ZM14.3728 20.3489H21.2702C22.2445 20.3489 23.0399 21.1254 23.0399 22.0746C23.0399 23.0255 22.2445 23.8019 21.2702 23.8019H14.3728C13.3993 23.8019 12.6022 23.0255 12.6022 22.0746C12.6022 21.1254 13.3993 20.3489 14.3728 20.3489Z" fill="#D02128"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M116.962 21.0978V34.9117H120.218V25.4693H121.022C121.022 25.4693 122.375 25.2213 122.375 23.6547V23.0672H120.24V22.1394C120.24 22.1394 120.272 21.5202 120.98 21.3449H122.375V18.7162H119.648C119.648 18.7162 117.364 18.7368 116.962 21.0978ZM132.346 34.9836H129.026V26.6126C129.026 26.6126 129.112 22.2001 133.72 22.2001H135.518C135.518 22.2001 139.429 22.118 140 26.0148V34.9416H138.076C138.076 34.9416 136.786 34.9836 136.786 33.6435C136.786 32.3027 136.786 26.3851 136.786 26.3851C136.786 26.3851 136.575 25.0041 135.179 25.0041H133.615C133.615 25.0041 132.304 25.1281 132.304 26.4681L132.346 34.9836ZM123.887 22.3241V34.9322H127.208V23.458C127.208 23.458 127.219 22.6208 126.203 22.3549L123.887 22.3241ZM123.887 18.6538V21.1594H127.208V19.7886C127.208 19.7886 127.219 18.9505 126.203 18.6854L123.887 18.6538Z" fill="#101940"/>
+              </svg>
+          </figure>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+           
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><span class="bi bi-house font-14 "></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mutual Fund</a>
+              <ul class="sub-menu">
+                <li class="nav-item"><a class="nav-link" href="mutual-fund-find-funds.html">Mutual Fund</a></li>
+                <li class="nav-item"><a class="nav-link" href="mutual-fund-details-new.html">Buy Mutual Fund</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Buy Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Financial Planning</a>
+              <ul class="sub-menu">
+                <li class="nav-item"><a class="nav-link" href="#">Action</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Another action</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Accounts & Finance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">CRM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Utility</a>
+              <ul class="sub-menu">
+                <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section data-list-index="1" class="hero-section fullscreen">
+      <div class="container h-100">
+        <div class="credintial-btn-wrapper position-absolute">
+          <button class="credential-btn me-2">Sign Up</button>
+          <button href="login.html" class="credential-btn">Login</button>
+        </div>
+        <div class="swiper mySwiper h-100">
+          <div class="swiper-wrapper h-100">
+            <div class="swiper-slide">
+              <div class="col-md-12 col-sm-12 h-100 d-flex justify-content-start align-items-end slide-1">
+                <h3 class="hero-title text-start mb-0">Invest for <br>
+                  Future & Grow <br>
+                  Your Money Faster
+                  test
+                </h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-12 col-sm-12 h-100 d-flex justify-content-start align-items-end slide-2">
+                <h3 class="hero-title text-start mb-0">Invest for <br>
+                  Future & Grow <br>
+                  Your Money Faster
+                  test
+                </h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-12 col-sm-12 h-100 d-flex justify-content-start align-items-end slide-3">
+                <h3 class="hero-title text-start mb-0">Invest for <br>
+                  Future & Grow <br>
+                  Your Money Faster
+                  test
+                </h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-md-12 h-100 d-flex justify-content-start align-items-end slide-4">
+                <h3 class="hero-title text-start mb-0">Invest for <br>
+                  Future & Grow <br>
+                  Your Money Faster
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="scroll-down">
+          <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+        </div> -->
+      </div>
+    </section>
+    <section data-list-index="2" class="search-section fullscreen">
+      <div class="container padding-top-80">
+        <div class="row h-100">
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column">
+            <h2 class="w-100 mb-45 section-title">Your Search
+              Ends Here</h2>
+            <div class="card-wrapper">
+              <!-- card 1 starts -->
+              <div class="card category-card">
+                <a href="#">  
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Stats.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Top Funds</h5>
+                </a>
+              </div>
+              <!--  -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Chart.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Compare Funds</h5>
+                </a>
+              </div>
+              <!-- third card -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Rupee.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Scheme NAV</h5>
+                </a>
+              </div>
+              <!-- fourth card -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Briefcase.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Portfolio</h5>
+                </a>
+              </div>
+              <!-- fifth -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Contract.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Factsheets</h5>
+                </a>
+              </div>
+              <!-- sithh -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Increase.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Dividend</h5>
+                </a>
+              </div>
+              <!-- seventh -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Growth.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">NFO Update</h5>
+                </a>
+              </div>
+              <!-- eighth -->
+              <div class="card category-card">
+                <a href="#">
+                  <figure class="image-wrapper">
+                    <img class="category-img" src="assets/web-asset/images/Rank.png" alt="img" class="img-fluid">
+                  </figure>
+                  <h5 class="card-title">Ranking</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <figure class="m-0 p-0 w-100 h-100 d-flex justify-content-center ">
+              <img src="assets/web-asset/images/binocular-man.png" class="img-fluid" alt="img">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-list-index="3" class="instfintopfunds-section fullscreen">
+      <div class="container">
+       <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <h4 class="">Instafin TOP </h4>
+          <h2 class="section-title">
+            Mutual Funds
+          </h2>
+          </div>
+          <div class="col-lg-4 col-sm-6 d-flex justify-content-md-end justify-content-sm-end align-items-center">
+          <div class="btn-wrapper">
+            <button class="custom-outline-btn-1">
+              <span class="bi bi-arrow-right me-2"></span>
+              See Other</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 d-flex align-items-end justify-content-end">
+          
+        </div>
+       </div>
+       
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <div class="table-wrapper">
+              <div class="table-responsive h-100">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="">Large Cap (Core)</th>
+                      <th class="">3Y</th>
+                      <th class="">4Y</th>
+                      <th class="">5Y</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="">Flexi Cap (Core)</th>
+                      <th class="">3Y</th>
+                      <th class="">4Y</th>
+                      <th class="">5Y</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="">Mid Cap (Core)</th>
+                      <th class="">3Y</th>
+                      <th class="">4Y</th>
+                      <th class="">5Y</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="table-content-wrapper">
+                          <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                        </div>
+                      </td>
+                      <td><span>16.47</span></td>
+                      <td><span>14.22</span></td>
+                      <td><span>N/A</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 d-flex justify-content-md-center justify-content-sm-center align-items-md-center align-items-sm-center">
+           <figure><img src="assets/web-asset/images/Chart.png" class="img-fluid" alt="img"></figure> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-list-index="4" class="fund-partner-section fullscreen">
+      <div class="container padding-top-80 h-100">
+        <div class="row d-flex align-items-center h-100">
+          <div class="col-lg-5 col-md-4 col-sm-12 h-100 d-flex justify-content-center align-items-center flex-column">
+            <figure class="fund-partner-bg-wrapper">
+              <img class="img-fluid" src="assets/web-asset/images/Vector.png" alt="img">
+            </figure>
+            <!-- <h4 class="fund-title">35+</h4>
+            <h5 class="fund-title-text">Fund Partners</h5> -->
+         
+          </div>
+          <div class=" col-lg-7 col-md-8 col-sm-12 d-flex justify-content-center flex-column align-items-center  ">
+           <div class="w-100  d-flex justify-content-md-start justify-content-sm-center flex-wrap">
+            <div class="col-md-3 col-sm-12 w-sm-100">   <figure class="fund-img-wrapper">
+              <img src="assets/web-asset/images/Frame 70.png" class="img-fluid" alt="img">
+            </figure></div>
+            <div class="col-md-3 col-sm-12 w-sm-100"> <figure class="fund-img-wrapper">
+              <img src="assets/web-asset/images/hdfc_groww.png" class="img-fluid " alt="img">
+            </figure></div>
+            <div class="col-md-3 col-sm-12 w-sm-100">
+              <figure class="fund-img-wrapper ">
+                <img src="assets/web-asset/images/Frame 72.png" class="img-fluid" alt="img">
+              </figure>
+            </div>
+            <div class="col-md-3 col-sm-12 w-sm-100">
+            <figure class="fund-img-wrapper ">
+              <img src="assets/web-asset/images/l&t_groww.png" class="img-fluid" alt="img">
+            </figure>
+          </div>
+          </div>
+          <div class="w-100  d-flex justify-content-md-end justify-content-sm-center flex-wrap">
+            <div class="col-md-3 col-sm-12 d-flex justify-content-md-end justify-content-sm-center justify-content-xs-center w-sm-100"><figure class="fund-img-wrapper">
+              <img src="assets/web-asset/images/lic_groww.png" class="img-fluid" alt="img">
+            </figure></div>
+            <div class="col-md-3 col-sm-12 d-flex justify-content-md-end justify-content-sm-center justify-content-xs-center w-sm-100"><figure class="fund-img-wrapper">
+              <img src="assets/web-asset/images/birla_groww.png" class="img-fluid " alt="img">
+            </figure></div>
+            <div class="col-md-3 col-sm-12 d-flex justify-content-md-end justify-content-sm-center justify-content-xs-center w-sm-100"><figure class="fund-img-wrapper">
+              <img src="assets/web-asset/images/reliance_groww.png" class="img-fluid" alt="img">
+            </figure></div>
+            <div class="col-md-3 col-sm-12 d-flex justify-content-md-end justify-content-sm-center justify-content-xs-center w-sm-100"><figure class="fund-img-wrapper">
+              <img src="assets/web-asset/images/sbi_groww.png" class="img-fluid" alt="img">
+            </figure></div>
+          </div>
+          <div class="btn-wrapper d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-xs-center align-items-center mb-4 w-100 mt-5">
+            <button class="custom-outline-btn-1 ">
+              <span class="bi bi-arrow-rightme-1"></span>View all Fund
+              Partners</button>
+          </div>
+            <!-- <div class="grid-wrapper gap-3"> -->
+              <!-- <div class="grid-item grid-item-1">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/Frame 70.png" class="img-fluid" alt="img">
+                </figure>
+              </div> -->
+              <!-- <div class="grid-item grid-item-2">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/hdfc_groww.png" class="img-fluid " alt="img">
+                </figure>
+              </div> -->
+              <!-- <div class="grid-item grid-item-3">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/Frame 72.png" class="img-fluid" alt="img">
+                </figure>
+              </div> -->
+              <!-- <div class="grid-item grid-item-4">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/l&t_groww.png" class="img-fluid" alt="img">
+                </figure>
+              </div> -->
+            </div>
+            <!-- <div class="grid-wrapper gap-3">
+              <div class="grid-item grid-item-5">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/lic_groww.png" class="img-fluid" alt="img">
+                </figure>
+              </div>
+              <div class="grid-item grid-item-6">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/birla_groww.png" class="img-fluid " alt="img">
+                </figure>
+              </div>
+              <div class="grid-item grid-item-7">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/reliance_groww.png" class="img-fluid" alt="img">
+                </figure>
+              </div>
+              <div class="grid-item grid-item-8">
+                <figure class="fund-img-wrapper w-100">
+                  <img src="assets/web-asset/images/sbi_groww.png" class="img-fluid" alt="img">
+                </figure>
+              </div>
+            </div> -->
+              
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-list-index="5" class="mutual-fund-section overflow-hidden fullscreen">
+      <div class="container padding-top-80 h-100">
+        <div class="row d-flex justify-content-center h-100">
+          <div class="col-lg-6 col-md-8 mt-3 col-sm-12 d-flex justify-content-center flex-column">
+            <h2 class="section-title mt-3">
+              Mutual Fund
+              for Every Investor
+            </h2>
+            <p>Whatever your investment need be, we have a fund for you. Choose for Long term or Short-Term from various
+              equity oriented or debt oriented funds. We have a fund for every need.</p>
+            <!-- test -->
+           <div class="accordion-wrapper">
+            <div class="accordian-style-2 accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- accordian test -->          
+              <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-sm-center justify-content-xs-center ">
+              <button class="custom-btn-rounded me-2" type="button">Sign Up</button>
+              <button class="custom-btn-rounded me-2  " type="button">Log In </button>
+            </div> -->
+          </div>
+          <div class="col-lg-6 col-md-none"></div>
+        </div>
+      </div>
+    </section>
+    <section data-list-index="6" class="calculator-section pt-0 fullscreen">
+      <div class="container padding-top-80 h-100">
+        <div class="row h-100">
+          <div class="col-lg-4 col-md-12 col-sm-12 position-relative d-flex py-3 justify-content-around flex-column align-items-center">
+             <div class="sip-calc-wrapper">
+              <div class="card ">
+                <figure class="m-0 mb-4 p-0"><img src="assets/web-asset/images/bookkeeping.png" alt=""></figure>
+                <h5 class="card-title">SIP <br>
+                  Calculator</h5>
+                <p class="card-desc">
+                  Helps you calculate
+                  SIP returns
+                </p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary me-md-2 card-btn" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="lumpsum-calc-wrapper">
+              <div class="card ">
+                <figure class="m-0 mb-4 p-0">
+                  <img src="assets/web-asset/images/bookkeeping.png" alt="">
+                </figure>
+                <h5 class="card-title">SIP
+                  Calculator</h5>
+                <p class="card-desc">
+                  Helps you calculate
+                  SIP returns
+                </p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary me-md-2 card-btn" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="mutual-calc-wrapper">
+              <div class="card ">
+                <figure class="m-0 mb-4 p-0">
+                  <img src="assets/web-asset/images/bookkeeping.png" alt="">
+                </figure>
+                <h5 class="card-title">SIP
+                  Calculator</h5>
+                <p class="card-desc">
+                  Helps you calculate
+                  SIP returns
+                </p>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary me-md-2 card-btn" type="button">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center align-items-center flex-column padding-left-4">
+            <h2 class="section-title m-0 p-0 mt-3 mb-3">
+              Mutual Fund
+              Tools &
+              Calculators
+            </h2>
+            <div class="btn-wrapper d-flex justify-content-lg-start mt-2 justify-content-md-center justify-content-sm-center w-100 mt-2 ms-2">
+              <button class="custom-outline-btn-1"><span class="bi bi-arrow-right me-2 "></span>See other Tools</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section data-list-index="7" class="types-of-mutual-fund fullscreen">
+      <div class="container padding-top-80 h-100">
+        <div class="row tmf-bg h-100">
+          <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="section-title mb-1">Types of
+              Mutual Funds
+              Based on
+              Asset Class</h2>
+            <p class="p-0 m-0 mt-3 mb-3">Mutual funds in India are classified into different categories based on
+              the asset class they invest in. Some popular categories are as follows.</p>
+          </div>
+          <div class="col-lg-7 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="card type-mf-assets-wrapper">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Equity Mutual Funds</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Debt Mutual
+                    Funds</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Hybrid Funds</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                  tabindex="0">
+                  <div class="table-responsive ">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="title-th" scope="col">Top 5 Equity Mutual Funds</th>
+                          <th class="title-th" scope="col">3Y Returns
+                            (Annualized) %</th>
+                          <th class="title-th" scope="col">5Y Returns
+                            (Annualized) %</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a. </span></td>
+                          <td><span>23.94% p.a. </span></td>
+
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a. </span></td>
+                          <td><span>23.94% p.a. </span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                  tabindex="0">
+                  <div class="table-responsive ">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="title-th" scope="col">Top 5 Equity Mutual Funds</th>
+                          <th class="title-th" scope="col">3Y Returns
+                            (Annualized) %</th>
+                          <th class="title-th" scope="col">5Y Returns
+                            (Annualized) %</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a. </span></td>
+                          <td><span>23.94% p.a. </span></td>
+
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a. </span></td>
+                          <td><span>23.94% p.a. </span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                  tabindex="0">
+                  <div class="table-responsive ">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="title-th" scope="col">Top 5 Equity Mutual Funds</th>
+                          <th class="title-th" scope="col">3Y Returns
+                            (Annualized) %</th>
+                          <th class="title-th" scope="col">5Y Returns
+                            (Annualized) %</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a. </span></td>
+                          <td><span>23.94% p.a. </span></td>
+
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a. </span></td>
+                          <td><span>23.94% p.a. </span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="table-content-wrapper">
+                              <figure><img class="table-img" src="" alt=""></figure>
+                              <p class="fund-name">Quant Tax Plan Direct-Growth</p>
+                            </div>
+                          </td>
+                          <td><span>18.00% p.a.</span></td>
+                          <td><span>23.94% p.a.</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+                <div class="btn-wrapper d-flex justify-content-end mt-3">
+                  <button type="button" class="custom-outline-btn-1">See all Equity Mutual Funds<span
+                      class="fa fa-caret-right ms-2"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-list-index="8" class="testimonail-section fullscreen">
+      <div class="container padding-top-80 h-100"> 
+        <div class="row h-100">
+          <div class="col-md-9 col-sm-12 d-flex flex-wrap">
+            <div class="col-md-6 col-sm-12 p-3 col-sm-12 d-flex flex-column justify-content-around">
+              <div class="testimonail rectangle-testimonail">
+                <figure class="testimonial-img-wrapper">
+                  <img src="assets/web-asset/images/Image-40.png" class="testimonial-img" alt="img">
+                </figure>
+                <div class="ms-2">
+                  <h6 class="testimonail-title">Lorem ipsum</h6>
+                  <div class="star-wrapper">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                  </div>
+                  <p class="testimonail-desc">Lorem ipsum dolor sit amet consectetur. Nisi elementum magna dui vitae
+                    ullamcorper nunc fringilla. </p>
+                </div>
+              </div>
+              <div class="testimonail rectangle-testimonail-2">
+                <div class="top-testimonial d-flex ">
+                  <figure class="testimonial-img-wrapper">
+                    <img src="assets/web-asset/images/Image-43.png" class="testimonial-img" alt="img">
+                  </figure>
+                  <div class="d-flex flex-column ms-2">
+                    <h6 class="testimonial-title w-100">Lorem ipsum </h6>
+                    <div class="star-wrapper">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100">
+                  <p>Lorem ipsum dolor sit amet consectetur. Nisi elementum magna dui vitae ullamcorper nunc fringilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-3 col-sm-12 d-flex justify-content-center align-items-center"> <div class="testimonail circle-testimonail">
+              <figure class="testimonial-img-wrapper">
+                <img src="assets/web-asset/images/Image-41.png" class="testimonial-img" alt="img">
+              </figure>
+              <div>
+                <h6 class="testimonail-title text-center">Lorem ipsum </h6>
+                <div class="star-wrapper text-center">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <p class="testimonail-desc text-center">Lorem ipsum dolor sit amet consectetur. Nisi elementum magna
+                  dui vitae ullamcorper nunc fringilla. </p>
+              </div>
+            </div></div>
+        
+          </div>
+          <div class="col-md-3 col-sm-12 d-flex justify-content-center align-items-center">
+            <div class="wrapper padding-50">
+              <h3>Our Top</h3>
+              <h2 class="section-title mb-2">Investors</h2>
+              <div class="star-wrapper">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x"></span>
+                <p>4 on Google play store</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section >
+    <!-- <section class="testimonail-section">
+      <div class="container padding-top-80 h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-12 col-sm-12 h-100">
+            <div class="testimonail-wrapper h-100">
+              <div class="testimonail rectangle-testimonail">
+                <figure class="testimonial-img-wrapper">
+                  <img src="assets/web-asset/images/Image-40.png" class="testimonial-img" alt="img">
+                </figure>
+                <div class="ms-2">
+                  <h6 class="testimonail-title">Lorem ipsum</h6>
+                  <div class="star-wrapper">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                  </div>
+                  <p class="testimonail-desc">Lorem ipsum dolor sit amet consectetur. Nisi elementum magna dui vitae
+                    ullamcorper nunc fringilla. </p>
+                </div>
+              </div>
+              <div class="testimonail circle-testimonail">
+                <figure class="testimonial-img-wrapper">
+                  <img src="assets/web-asset/images/Image-41.png" class="testimonial-img" alt="img">
+                </figure>
+                <div>
+                  <h6 class="testimonail-title text-center">Lorem ipsum </h6>
+                  <div class="star-wrapper text-center">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <p class="testimonail-desc text-center">Lorem ipsum dolor sit amet consectetur. Nisi elementum magna
+                    dui vitae ullamcorper nunc fringilla. </p>
+                </div>
+              </div>
+              <div class="testimonail rectangle-testimonail-2">
+                <div class="top-testimonial d-flex ">
+                  <figure class="testimonial-img-wrapper">
+                    <img src="assets/web-asset/images/Image-43.png" class="testimonial-img" alt="img">
+                  </figure>
+                  <div class="d-flex flex-column ms-2">
+                    <h6 class="testimonial-title w-100">Lorem ipsum </h6>
+                    <div class="star-wrapper">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100">
+                  <p>Lorem ipsum dolor sit amet consectetur. Nisi elementum magna dui vitae ullamcorper nunc fringilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column align-items-lg-center align-items-sm-center justify-content-md-center ">
+          <div class="wrapper padding-50">
+            <h3>Our Top</h3>
+            <h2 class="section-title mb-2">Investors</h2>
+            <div class="star-wrapper">
+              <span class="fa fa-star fa-2x checked"></span>
+              <span class="fa fa-star fa-2x checked"></span>
+              <span class="fa fa-star fa-2x checked"></span>
+              <span class="fa fa-star fa-2x checked"></span>
+              <span class="fa fa-star fa-2x"></span>
+              <p>4 on Google play store</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <!-- footer starts -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row w-100 m-0 p-0">
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-logo">
+              <figure>
+                <img src="assets/web-asset/images/logo.svg" alt="footer logo">
+              </figure>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quos animi magnam, id repudiandae
+                nesciunt accusamus dicta a repellat sunt
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-top-links">
+              <h5 class="mb-4">Top Links</h5>
+              <ul class="m-0 p-0">
+                <li><a href="#"><span>Home</span></a></li>
+                <li><a href="Mutual-fund.html"><span>Mutual Fund</span></a></li>
+                <li><a href="#"><span>News Feeds </span></a></li>
+                <li><a href="about-us.html"><span>About Us</span></a></li>
+                <li><a href="#"><span>Contact Us</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-useful-links">
+              <h5 class="mb-4">Useful Links</h5>
+              <ul class="m-0 p-0">
+                <li><a href="#"><span>Insurance</span></a></li>
+                <li><a href="#"><span>Mutual Fund</span></a></li>
+                <li><a href="#"><span>Lorem ipsum </span></a></li>
+                <li><a href="#"><span>Lorem ipsum</span></a></li>
+                <li><a href="#"><span>Lorem ipsum</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="footer-contact-details">
+              <h5 class="mb-4">Contact Details</h5>
+              <p class="d-flex align-items-start mt-2"><span class="fa fa-map-o pe-2"></span> <span>
+                  FF 130,131, Samanvay Saptarshi, Near Monalisa, Manjalpur, Vadodara, Gujarat, 390011, India</span> </p>
+              <p class="p-0 m-0"><strong></strong></p>
+              <p class="d-flex align-items-start mt-2"><span class="fa fa-phone pe-2"></span><a
+                  href="tel:02657961195">0265-7961195
+                </a> <span>
+                </span> </p>
+              <p class="d-flex align-items-start mt-2"><span class="fa fa-envelope-o pe-2"></span><a
+                  href="mailto:contact@navinchandrasecurities.com">contact@navinchandrasecurities.com
+                </a> <span>
+                </span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="p-0 mb-0 text-end px-5">2022 Design & developed by PSPL</p>
+    </div>
+  </footer>
+  <!-- footer ends -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/js/script.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script>
+    var win = $(window),
+      header = $('header'),
+
+      pos = header.offset().top,
+      sticky = function () {
+        win.scrollTop() > pos ?
+          header.addClass('sticky')
+          : header.removeClass('sticky')
+      }
+
+    win.scroll(sticky)
+  </script> -->
+  <script>
+    window.onscroll = function () { navScroll() };
+
+    var navbar = document.getElementById("Navbar1");
+    var sticky = navbar.offsetTop;
+
+    function navScroll() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: "true",
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+    });
+  </script>
+  <script>
+    // 
+/**
+ * @author Marci Czebe
+ */
+
+((a, b) => {
+  function c(b) {
+  a("html, body").stop(!0, !1).animate({
+    scrollTop: b
+  }, v.animation, "easeInOutExpo")
+}
+
+  function d() {
+      const c = z.dimensions(`[data-list-index="${r}"]`);
+      const d = t[r].bottomActive ? c[1] - b.innerHeight : c[0];
+      a(b).scrollTop(d, 0)
+  }
+
+  function e() {
+  a(b).scrollTop(0, 0)
+}
+
+  function f() {
+  x || d()
+}
+
+  function g() {
+  a("html, body").stop(!0, !1)
+}
+
+  function h() {
+      const d = z.windowScrollTop();
+      const e = x ? t[Object.keys(t)[0]].height : b.innerHeight;
+      const f = e / 2;
+      a.each(t, (a, g) => {
+    const h = z.dimensions(`[data-list-index="${a}"]`);
+    if(g.offset.top = h[0], g.offset.bottom = h[1], g.height = h[2], h[0] >= d && h[0] + f <= d + e || h[0] <= d && h[1] - f >= d) {
+      if(r = a, t[r].offset.top == d) return;
+      if(h[2] > e && e / 2 + d >= h[0] && h[0] + h[2] + e / 2 >= d + e) {
+        if(g.bottomActive = !1, d >= h[0] && h[0] + g.height >= d + e) return;
+        if(d >= h[1] - e) {
+          g.bottomActive = !0;
+          const i = h[1] - b.innerHeight;
+          return void c(i)
+        }
+      }
+      c(h[0])
+    }
+  })
+  }
+
+  function i() {
+  clearTimeout(u), u = setTimeout(() => {
+    l()
+  }, v.scroll)
+}
+
+  function j() {
+  x || (w = !0)
+}
+
+  function k({which}) {
+  x || 1 === which && (clearTimeout(u), u = setTimeout(() => {
+    w = !0, l()
+  }, v.wheel))
+}
+
+  function l() {
+  (w || x) && (h(), w = !1)
+}
+
+  function m(a) {
+  ["Space", "ArrowUp", "ArrowDown"].includes(a.code) && a.preventDefault()
+}
+
+  function n() {
+  g(), clearTimeout(u), u = setTimeout(() => {
+    w = !0, l()
+  }, v.wheel)
+}
+
+  function o() {
+  setTimeout(() => {
+    d()
+  }, v.resize)
+}
+
+  function p() {
+  a(b).on("beforeunload unload", e), a(b).on("resize", f), a(b).on("touchstart", g), a(b).on("touchmove", g), a(b).on("touchend", i), a(b).on("mousedown", j), a(b).on("mouseup", k), a(b).on("keydown", m), a(b).on("wheel DOMMouseScroll mousewheel", n), a(b).on("orientationchange", o)
+}
+
+  function q() {
+  s.each(function() {
+    const b = z.dimensions(this);
+    t[a(this).data("listIndex")] = y.setScrollSectionList(b)
+  }).promise().done(() => {
+    r = Object.keys(t)[0], p()
+  })
+}
+  a.extend(a.easing, {
+  easeInOutExpo(a, e, f, b, c) {
+    return 0 == e ? f : e == c ? f + b : 1 > (e /= c / 2) ? b / 2 * 2 ** (10 * (e - 1)) + f : b / 2 * (-(2 ** (-10 * --e)) + 2) + f;
+  }
+});
+  var r = "";
+  var s = a("[data-list-index]");
+  var t = {};
+  var u = null;
+
+  var v = {
+      scroll: 850,
+      wheel: 350,
+      resize: 450,
+      animation: 850
+  };
+
+  var w = !1;
+  var x = "maxTouchPoints" in navigator && 0 < navigator.maxTouchPoints || "matchMedia" in b && b.matchMedia("(any-pointer:coarse)").matches || "ontouchstart" in b || !1;
+
+  var y = {
+      setScrollSectionList(a) {
+          return {
+              offset: {
+                  top: a[0],
+                  bottom: a[1]
+              },
+              height: a[2],
+              bottomActive: !1
+          }
+      }
+  };
+
+  var z = {
+      dimensions(b) {
+          const c = Math.round(a(b).offset().top), d = Math.round(a(b).outerHeight(!0));
+          return [c, c + d, d]
+      },
+      windowScrollTop() {
+          return a(b).scrollTop()
+      }
+  };
+
+  a.SCsnapper = () => {
+  q()
+}
+})(jQuery, window), $.SCsnapper();
+  </script> -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="
+    https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

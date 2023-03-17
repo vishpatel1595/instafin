@@ -1,0 +1,46 @@
+.form-control {
+    border-radius: 0.25rem !important;
+}
+
+.form-control:focus {
+    box-shadow: box-shadow-9;
+}
+
+.card {
+    .form-control:focus {
+        box-shadow: box-shadow-9 !important;
+    }
+}
+
+.form-control-custom {
+    padding: 0.125rem 0.625rem !important;
+}
+
+.calculator-form {
+    label {
+        font-size: $font-size-normal;
+    }
+
+    input {
+        font-size: $font-size-normal;
+    }
+
+    select {
+        font-size: $font-size-normal;
+
+        option {
+            font-size: $font-size-normal;
+        }
+    }
+}
+
+.fundratioform {
+h6 {
+    color: $color-text-light !important;
+}
+.inputtext {
+    ::placeholder {
+        color: $global-font-title;
+    }
+}
+}

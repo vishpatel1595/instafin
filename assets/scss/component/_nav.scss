@@ -1,0 +1,210 @@
+.mutual-tabs-vertical {
+  margin-top: 2rem;
+
+  .nav {
+    width: 100%;
+    max-width: 13.75rem;
+
+    .nav-link {
+      padding: 0.625rem 0 0.625rem 0;
+    }
+
+    @media (max-width:48rem) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .nav-link {
+    display: block;
+    position: relative;
+    padding-bottom: 0.438rem;
+    cursor: pointer;
+    max-width: 13.75rem;
+    color: $global-font-color;
+    font-weight: $font-weight-bold;
+    line-height: 1.313rem;
+  }
+  .nav-link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.125rem;
+    width: 0;
+    transition: width 0s ease, background 0.5s ease;
+  }
+
+  .nav-link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0.125rem;
+    width: 0;
+    background: $primary-color;
+    transition: width 0.5s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: $primary-color;
+  }
+  .nav-link:hover:before,
+  .nav-link.active:before {
+    width: 100%;
+    background: $primary-color;
+    transition: width 0.5s ease;
+  }
+  .nav-link:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
+
+  @media (max-width:48rem) {
+    flex-wrap: wrap;
+  }
+}
+.inner-page-section-1 {
+  .navsidebar {
+    width: 20%;
+    .nav-link {
+      background: $color-body-bg;
+      padding: 0.938rem 0.625rem;
+      min-width: 12.5rem;
+      border-bottom: 0.063rem solid $nav-heading-color;
+      border-radius: 0 0.5rem 0.5rem 0;
+      color: $color-black;
+      display: flex;
+      justify-content: space-between;
+      font-size: $font-size-small;
+      &.active {
+        background: $primary-color;
+        color: $color-white;
+        border-bottom: 0.063rem solid $primary-color-lighter;
+        span {
+          transform: rotate(180deg);
+             }
+      }
+    }
+    @media (max-width:61.938rem) {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  .desktop-nav {
+    display: flex;
+    @media (max-width:61.938rem) {
+      display: none;
+    }
+  }
+  .mobile-nav {
+    display: none;
+    @media (max-width:61.938rem) {
+      display: flex;
+    }
+  }
+  .tab-content {
+    width: 80%;
+    @media (max-width:61.938rem) {
+      width: 100%;
+    }
+  }
+  .horizontal-nav-inner-page {
+    .nav-item {
+      .nav-link {
+        color: $nav-heading-color;
+        background: $color-white-25;
+        border-radius: 0.5rem 0.5rem 0 0;
+        font-size: $font-size-normal;
+        margin-right: 0.125rem;
+        text-transform: capitalize;
+
+        &.active {
+          background: $primary-color;
+          color: $color-white;
+        }
+
+        &:hover {
+          background: $primary-color;
+          color: $color-white;
+        }
+      }
+    } 
+  }
+  .horizontal-nav-2-inner-page {
+    .nav-item {
+      .nav-link {
+        color: $nav-heading-color;
+        background: transparent;
+        border-radius: unset;
+        font-size: $font-size-normal;
+        font-weight: $font-weight-bold;
+        margin-right: 0.125rem;
+        text-transform: capitalize;
+        &:hover {
+          background: transparent;
+          color: $primary-color;
+          border-bottom: 0.063rem solid;
+          border-radius: 0.313rem;
+        }
+
+        &.active {
+          background: transparent;
+          color: $primary-color;
+          border-bottom: 0.063rem solid ;
+          box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+          border-radius:0.313rem;
+        }
+
+        
+      }
+    } 
+  }
+  .nav-filter-tabs {
+    .nav {
+      background: $color-white-25;
+      padding: 0.938rem;
+    }
+    .nav-item {
+      .nav-link {
+        color: $primary-color;
+        background: transparent;
+        border: 0.063rem solid $primary-color;
+        border-radius: 0.5rem;
+        margin-right: 0.313rem;
+        font-size: $font-size-small;
+        line-height: 0.75rem;
+        padding: 0.438rem 0.625rem;
+        &.active {
+          background: $primary-color-dark;
+          color: $color-white;
+          border-color: $primary-color-dark;
+        }
+        @media (max-width:61.938rem) {
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+// social networks
+.social-network-wrapper {
+  .social-item {
+    padding: 0;
+    margin: 0.125rem;
+    .social-link {
+      background-color: $color-body-bg;
+      color:$error-alert;
+      padding: 0.625rem 0.938rem;
+    }
+    &:hover {
+      .social-link {
+      color: $primary-color;
+      }
+    }
+  }
+}
